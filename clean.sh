@@ -2,4 +2,4 @@
 
 rm -f *~
 
-rm -f ./propTxt/*.txt
+rm -f ./csv/*.csv

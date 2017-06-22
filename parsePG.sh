@@ -8,7 +8,7 @@
 rm -f ./csv/*
 
 FOLDER='./rawHtml/*.txt';
-I=0
+I=0;
 for f in $FOLDER
 do
 
@@ -34,3 +34,7 @@ do
     I=$((I+1))
     
 done
+
+FOLDER='./csv/*.csv';
+awk 'FNR > 1' $FOLDER > csv/bigfile.csv
+head -1 csv/0.csv | cat - csv/bigfile.csv > temp && mv temp csv/bigfile.csv
