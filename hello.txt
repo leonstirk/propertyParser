@@ -1,0 +1,446 @@
+<caption classdCaption>Property Details</caption>
+<tr classdTr><td colspan2 classdTdBlurb>Click the link below to map the property (opens a dynamic map viewer in new tab or window).<br><p classsearchAgain><a hrefhttp://apps.dunedin.govt.nz/WebMaps/RatesMap/fieldAssessmentIDvalue331940layerRate20Assessment targetblank>Map this property</a></p></td></tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Valuation number</th>
+<td classdTd2Col>2755027401</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Rate account ID</th>
+<td classdTd2Col>2041564</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Property number</th>
+<td classdTd2Col>5041564</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Property address</th>
+<td classdTd2Col>5A Marion Street Macandrew Bay</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Certificate(s) of title <a hrefCoT>(guide only)</a></th>
+<td classdTd2Col>17C/744</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Ratepayer name(s)</th>
+<td classdTd2Col>
+Anthony John Avery<br />Brigitte Anne Avery<br />Clarke Craw and Company Nominees Limited<br />
+
+
+</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Postal address for this assessment</th>
+<td classdTd2Col>5A Marion Street
+Macandrew Bay
+Dunedin  9014</td>
+</tr>
+</table>
+
+
+
+< CURRENT RATES >
+<a idCurrentRates></a>
+<table summaryCurrent Rating Information classdTable>
+<caption classdCaption>Current Rates</caption>
+<tr classdTr><td colspan2 classdTdBlurb>The values on which the current rates are based are the valuations as at 1 July 2013 and remain in effect for rating purposes until 30 June 2017</td></tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Current rating year</th>
+<td classdTd2Col>2017</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Rating period</th>
+<td classdTd2Col>1 Jul 2016 to 30 Jun 2017</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Rateability</th>
+<td classdTd2Col>Rateable</td>
+</tr>
+<div>
+<tr classdTr>
+<th scoperow classdTh2Col>Rating differential</th>
+<td classdTd2Col>Area 3  Residential</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Land use</th>
+<td classdTd2Col>Residential : Single Unit excluding bach</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Legal description</th>
+<td classdTd2Col>LOT 6 DP 11686</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Area in hectares</th>
+<td classdTd2Col>0.2082</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Value of improvements (01/07/13)</th>
+<td classdTd2Col>365,000</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Land value (01/07/13)</th>
+<td classdTd2Col>255,000</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Capital value (01/07/13)</th>
+<td classdTd2Col>620,000</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Separately used or inhabited parts</th>
+<td classdTd2Col>1</td>
+</tr>
+</div>
+</table>
+
+
+< SALES DATA >
+<a idPropertySales></a>
+
+
+<p classtopofpage><a hreftop>Top of this page</a></p>
+
+< RATES LEVIED >
+<a idRatesLevied></a>
+<table summaryThe rates levied on this property in (2017) classdTable>
+<caption classdCaption>Rates levied (2017)</caption>
+<thead>
+<tr classdTr>
+<th scopecol classdTh4ColL>Description</th>
+<th scopecol classdTh4ColR>Factor</th>
+<th scopecol classdTh4ColR>Rate or Charge</th>
+<th scopecol classdTh4ColR2>Amount</th>
+</tr>
+</thead>
+<tfoot>
+<tr classdTr>
+<td colspan3 classdTd4ColTotalL>Total Charge</td>
+<td classdTd4ColTotalR>3,105.88</td>
+</tr>
+</tfoot>
+
+<tr classdTr>
+<td classdTd4ColL>Residential Community Services</td>
+<td classdTd4ColR>1</td>
+<td classdTd4ColR>227.00</td>
+<td classdTd4ColR2>227.00</td>
+</tr>
+
+<tr classdTr>
+<td classdTd4ColL>General Rate  Residential</td>
+<td classdTd4ColR>620,000</td>
+<td classdTd4ColR>0.003159</td>
+<td classdTd4ColR2>1958.58</td>
+</tr>
+
+<tr classdTr>
+<td classdTd4ColL>Residential Kerbside Recycling</td>
+<td classdTd4ColR>1</td>
+<td classdTd4ColR>66.30</td>
+<td classdTd4ColR2>66.30</td>
+</tr>
+
+<tr classdTr>
+<td classdTd4ColL>Citywide Water Connected</td>
+<td classdTd4ColR>1</td>
+<td classdTd4ColR>372.00</td>
+<td classdTd4ColR2>372.00</td>
+</tr>
+
+<tr classdTr>
+<td classdTd4ColL>Residential Drainage Connected</td>
+<td classdTd4ColR>1</td>
+<td classdTd4ColR>482.00</td>
+<td classdTd4ColR2>482.00</td>
+</tr>
+
+</table>
+
+< CURRENT RATES BRAKEDOWN>
+<a namebreakdown idbreakdown></a>
+<h3><a idaBreak hrefjavascript:void(0); onClicktoggleBreak()>Show full rates breakdown</a></h3>
+<div iddivBreak styledisplay:none>
+<table summaryCurrent Rates Breakdown classdTable>
+<caption classdCaption>Rates Breakdown  what your 2017 rates pay for</caption>
+<thead>
+<tr classdTr>
+<th scopecol classdTh3ColL>Description</th>
+<th scopecol classdTh3ColL>Gross General Rate</th>
+<th scopecol classdTh3ColR>Net General Rate</th>
+</tr>
+</thead>
+
+<tr classdTr>
+<td classdTd3ColLH>General Rates:</td>
+<td classdTd3ColL>nbsp;</td>
+<td classdTd3ColR>nbsp;</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Roads and Footpaths</td>
+<td classdTd3ColL>541.53</td>
+<td classdTd3ColR>396.03</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Parks and Reserves</td>
+<td classdTd3ColL>160.02</td>
+<td classdTd3ColR>116.73</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>City Planning</td>
+<td classdTd3ColL>160.60</td>
+<td classdTd3ColR>117.32</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Economic Development</td>
+<td classdTd3ColL>50.14</td>
+<td classdTd3ColR>36.63</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>City Marketing</td>
+<td classdTd3ColL>37.41</td>
+<td classdTd3ColR>27.22</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Council Communications</td>
+<td classdTd3ColL>73.84</td>
+<td classdTd3ColR>54.06</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Elected Members</td>
+<td classdTd3ColL>118.89</td>
+<td classdTd3ColR>86.77</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Regulatory Services</td>
+<td classdTd3ColL>91.47</td>
+<td classdTd3ColR>66.79</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Public Halls, Toilets and Town Hall</td>
+<td classdTd3ColL>148.85</td>
+<td classdTd3ColR>108.70</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Civil Defence</td>
+<td classdTd3ColL>27.03</td>
+<td classdTd3ColR>19.78</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Visitor Centre</td>
+<td classdTd3ColL>19.98</td>
+<td classdTd3ColR>14.69</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Cemeteries and Crematorium</td>
+<td classdTd3ColL>11.16</td>
+<td classdTd3ColR>8.03</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Libraries</td>
+<td classdTd3ColL>277.73</td>
+<td classdTd3ColR>202.71</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Toitu Otago Settlers Museum</td>
+<td classdTd3ColL>175.88</td>
+<td classdTd3ColR>128.29</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Dunedin Public Art Gallery</td>
+<td classdTd3ColL>104.59</td>
+<td classdTd3ColR>76.38</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Otago Museum</td>
+<td classdTd3ColL>115.95</td>
+<td classdTd3ColR>84.61</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Events and Community Development</td>
+<td classdTd3ColL>134.75</td>
+<td classdTd3ColR>98.32</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Swimming Pools</td>
+<td classdTd3ColL>105.96</td>
+<td classdTd3ColR>77.36</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Forsyth Barr Stadium</td>
+<td classdTd3ColL>326.10</td>
+<td classdTd3ColR>238.16</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColLH>Total General Rates</td>
+<td classdTd3ColLH>2681.88</td>
+<td classdTd3ColRH>1958.58</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Less Dividend/Investment Income</td>
+<td classdTd3ColL>723.30</td>
+<td classdTd3ColR>nbsp;</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColLT>NET TOTAL GENERAL RATES</td>
+<td classdTd3ColLT>1958.58</td>
+<td classdTd3ColRT>1958.58</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColLH>Community Services Rates:</td>
+<td classdTd3ColL>nbsp;</td>
+<td classdTd3ColR>nbsp;</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Parks and Reserves</td>
+<td classdTd3ColL>171.52</td>
+<td classdTd3ColR>171.52</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Botanic Garden</td>
+<td classdTd3ColL>55.48</td>
+<td classdTd3ColR>55.48</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColLT>Total Community Services Rates</td>
+<td classdTd3ColLT>227.00</td>
+<td classdTd3ColRT>227.00</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColLH>Other Targeted Rates:</td>
+<td classdTd3ColL>nbsp;</td>
+<td classdTd3ColR>nbsp;</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Residential Kerbside Recycling</td>
+<td classdTd3ColL>66.30</td>
+<td classdTd3ColR>66.30</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Citywide Water Connected</td>
+<td classdTd3ColL>372.00</td>
+<td classdTd3ColR>372.00</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColL>Residential Drainage Connected</td>
+<td classdTd3ColL>482.00</td>
+<td classdTd3ColR>482.00</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColLT>Total Other Targeted Rates</td>
+<td classdTd3ColLT>920.30</td>
+<td classdTd3ColRT>920.30</td>
+</tr>
+
+<tr classdTr>
+<td classdTd3ColLH>TOTAL RATES</td>
+<td classdTd3ColLH>3105.88</td>
+<td classdTd3ColRH>3105.88</td>
+</tr>
+
+</table>
+<p>The Rates Breakdown provided above shows how your rates are spent. 
+The gross general rate column is reduced by income the Council receives from 
+investments in Councilowned companies, the Waipori Fund and City Property, 
+o give the net general rate.</p>
+</div>
+<script>
+function toggleBreak() 
+var divT  document.getElementById(divBreak);
+divT.style.display  (divT.style.display  )  none : ;
+document.getElementById(aBreak).innerHTML  (divT.style.display  )  Hide full rates breakdown : Show full rates breakdown;
+
+</script>
+
+<p classtopofpage><a hreftop>Top of this page</a></p>
+
+< FUTURE RATES >
+<a idFutureRates></a>
+<div idctl00CODContentrptRatesDetailsctl00Div2>
+<table summaryFuture rating details classdTable>
+<caption classdCaption>Future Rates</caption>
+<tr classdTr><td colspan2 classdTdBlurb>The values on which the future rates will be based are the valuations as at 1 July 2016 and will not take effect for rating purposes until 1 Jul 2017.</td></tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Future rating year</th>
+<td classdTd2Col>2018</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Future rating period</th>
+<td classdTd2Col>1 Jul 2017 to 30 Jun 2018</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Rateability</th>
+<td classdTd2Col>Rateable</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Rating differential</th>
+<td classdTd2Col>Area 3  Residential</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Land use</th>
+<td classdTd2Col>Residential : Single Unit excluding bach</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Legal description</th>
+<td classdTd2Col>LOT 6 DP 11686</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Area in hectares</th>
+<td classdTd2Col>0.2082</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Value of improvements (01/07/16)</th>
+<td classdTd2Col>440,000</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Land value (01/07/16)</th>
+<td classdTd2Col>280,000</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Capital value (01/07/16)</th>
+<td classdTd2Col>720,000</td>
+</tr>
+<tr classdTr>
+<th scoperow classdTh2Col>Separately used or inhabited parts</th>
+<td classdTd2Col>1</td>
+</tr>
+</table>
+</div>
+< QV link commented out every 3 years. H45700 (2010) >
+<p>If you wish to object to your valuation please go directly to the Quotable Values site; <a hrefhttp://ratingobjection.qv.co.nz>Objection to Valuation</a>. <br />You can also visit <a hrefhttp://ratingvalueobjections.co.nz>this information page</a> if you would like more information before lodging an objection.</p>
+<p classtopofpage><a hreftop>Top of this page</a></p>
+
+< ESTIMATED RATES >
+<a idEstFutureRates></a>
+
+
+
+< ENDING RATE ACCOUNT MESSAGE >
