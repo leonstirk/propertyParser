@@ -1,223 +1,202 @@
-Property Details
-Valuation number
-2755027401
-Rate account ID
-2041564
-Property number
-5041564
-Property address
-5A Marion Street Macandrew Bay
-Certificate(s) of title (guide only)
-17C/744
-Ratepayer name(s)
-Anthony John Avery; Brigitte Anne Avery; Clarke Craw and Company Nominees Limited; 
-Postal address for this assessment
-5A Marion Street
-Macandrew Bay
-Dunedin  9014
-Current Rates
-The values on which the current rates are based are the valuations as at 1 July 2013 and remain in effect for rating purposes until 30 June 2017
-Current rating year
-2017
-Rating period
-1 Jul 2016 to 30 Jun 2017
-Rateability
-Rateable
-Rating differential
-Area 3  Residential
-Land use
-Residential : Single Unit excluding bach
-Legal description
-LOT 6 DP 11686
-Area in hectares
-0.2082
-Value of improvements (01/07/13)
-365,000
-Land value (01/07/13)
-255,000
-Capital value (01/07/13)
-620,000
-Separately used or inhabited parts
-1
-Rates levied (2017)
-Description
-Factor
-Rate or Charge
-Amount
-Total Charge
-3,105.88
-Residential Community Services
-1
-227.00
-227.00
-General Rate  Residential
-620,000
-0.003159
-1958.58
-Residential Kerbside Recycling
-1
-66.30
-66.30
-Citywide Water Connected
-1
-372.00
-372.00
-Residential Drainage Connected
-1
-482.00
-482.00
-Show full rates breakdown
-Rates Breakdown  what your 2017 rates pay for
-Description
-Gross General Rate
-Net General Rate
-General Rates:
-nbsp;
-nbsp;
-Roads and Footpaths
-541.53
-396.03
-Parks and Reserves
-160.02
-116.73
-City Planning
-160.60
-117.32
-Economic Development
-50.14
-36.63
-City Marketing
-37.41
-27.22
-Council Communications
-73.84
-54.06
-Elected Members
-118.89
-86.77
-Regulatory Services
-91.47
-66.79
-Public Halls, Toilets and Town Hall
-148.85
-108.70
-Civil Defence
-27.03
-19.78
-Visitor Centre
-19.98
-14.69
-Cemeteries and Crematorium
-11.16
-8.03
-Libraries
-277.73
-202.71
-Toitu Otago Settlers Museum
-175.88
-128.29
-Dunedin Public Art Gallery
-104.59
-76.38
-Otago Museum
-115.95
-84.61
-Events and Community Development
-134.75
-98.32
-Swimming Pools
-105.96
-77.36
-Forsyth Barr Stadium
-326.10
-238.16
-Total General Rates
-2681.88
-1958.58
-Less Dividend/Investment Income
-723.30
-nbsp;
-NET TOTAL GENERAL RATES
-1958.58
-1958.58
-Community Services Rates:
-nbsp;
-nbsp;
-Parks and Reserves
-171.52
-171.52
-Botanic Garden
-55.48
-55.48
-Total Community Services Rates
-227.00
-227.00
-Other Targeted Rates:
-nbsp;
-nbsp;
-Residential Kerbside Recycling
-66.30
-66.30
-Citywide Water Connected
-372.00
-372.00
-Residential Drainage Connected
-482.00
-482.00
-Total Other Targeted Rates
-920.30
-920.30
-TOTAL RATES
-3105.88
-3105.88
-Future Rates
-The values on which the future rates will be based are the valuations as at 1 July 2016 and will not take effect for rating purposes until 1 Jul 2017.
-Future rating year
-2018
-Future rating period
-1 Jul 2017 to 30 Jun 2018
-Rateability
-Rateable
-Rating differential
-Area 3  Residential
-Land use
-Residential : Single Unit excluding bach
-Legal description
-LOT 6 DP 11686
-Area in hectares
-0.2082
-Value of improvements (01/07/16)
-440,000
-Land value (01/07/16)
-280,000
-Capital value (01/07/16)
-720,000
-Separately used or inhabited parts
-1
-Estimated Rates (2018)
-Description
-Factor
-Rate or Charge
-Amount
-Total Charge
-3,263.26
-General Rate  Residential
-720,000
-0.002893
-2,082.96
-Residential Community Services
-1
-230.00
-230.00
-Residential Kerbside Recycling
-1
-66.30
-66.30
-Residential Drainage Connected
-1
-495.00
-495.00
-Citywide Water Connected
-1
-389.00
-389.00
+<span idctl00ContentcusRatingInformationrepPageComponentsctl00lblComponentHeading classpageComponentHeading>Property Details</span>
+<img idctl00ContentcusRatingInformationrepPageComponentsctl00imgComponentSeparator src styleborderwidth:0px; />
+<img idctl00ContentcusRatingInformationrepPageComponentsctl00imgPanelCollapser src../../AppThemes/QLDC/Images/blank.gif alt styleborderwidth:0px; />
+
+</div>
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl00pnlComponent>
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl00cusPageComponentGridpnlCustomisationGrid>
+
+
+
+
+
+
+<div>
+<table classgrid cellspacing0 cellpadding3 rulescols border1 idctl00ContentcusRatingInformationrepPageComponentsctl00cusPageComponentGridrepWebGridctl00dtvWebGridListView stylewidth:100;bordercollapse:collapse;>
+<tr classnormalRow>
+<td classheaderColumn>Valuation Number:</td><td>2907400565</td>
+</tr><tr classalternateRow>
+<td classheaderColumn>Location:</td><td>23 B Onslow Road LAKE HAYES 9304</td>
+</tr><tr classnormalRow>
+<td classheaderColumn>Legal Description:</td><td>LOT 11 DP 447985</td>
+</tr><tr classalternateRow>
+<td classheaderColumn>Certificate Of Title</td><td>566460</td>
+</tr><tr classnormalRow>
+<td classheaderColumn>Nature Of Improvements:</td><td>DWG OI</td>
+</tr><tr classalternateRow>
+<td classheaderColumn>Visitor Accommodation Code:</td><td>RO</td>
+</tr>
+</table>
+</div>
+
+
+
+<br />
+
+
+
+
+
+</div>
+
+
+
+
+
+<br />
+
+</div>
+
+<input typehidden namectl00$Content$cusRatingInformation$repPageComponents$ctl00$cpePanelsClientState idctl00ContentcusRatingInformationrepPageComponentsctl00cpePanelsClientState />
+
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl01pnlComponentHeading>
+
+<span idctl00ContentcusRatingInformationrepPageComponentsctl01lblComponentHeading classpageComponentHeading>Owner with Address</span>
+<img idctl00ContentcusRatingInformationrepPageComponentsctl01imgComponentSeparator src styleborderwidth:0px; />
+<img idctl00ContentcusRatingInformationrepPageComponentsctl01imgPanelCollapser src../../AppThemes/QLDC/Images/blank.gif alt styleborderwidth:0px; />
+
+</div>
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl01pnlComponent>
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl01cusPageComponentGridpnlCustomisationGrid>
+
+
+
+
+
+
+
+
+<div>
+<table classgrid cellspacing0 cellpadding3 rulescols border1 idctl00ContentcusRatingInformationrepPageComponentsctl01cusPageComponentGridrepWebGridctl00grdWebGridTabularView stylewidth:100;bordercollapse:collapse;>
+<tr classheaderRow>
+<th scopecol><a hrefjavascript:doPostBack(ctl00$Content$cusRatingInformation$repPageComponents$ctl01$cusPageComponentGrid$repWebGrid$ctl00$grdWebGridTabularView,Sort$DisplayName)>Owners</a></th><th scopecol><a hrefjavascript:doPostBack(ctl00$Content$cusRatingInformation$repPageComponents$ctl01$cusPageComponentGrid$repWebGrid$ctl00$grdWebGridTabularView,Sort$FormattedAddress)>Postal Address</a></th>
+</tr><tr classnormalRow>
+<td>Avery and Associates Limited</td><td>C/ Mr A J Avery 23B Onslow Road Lower Shotover QUEENSTOWN   9304</td>
+</tr>
+</table>
+</div>
+
+<br />
+
+
+
+
+
+</div>
+
+
+
+
+
+<br />
+
+</div>
+
+<input typehidden namectl00$Content$cusRatingInformation$repPageComponents$ctl01$cpePanelsClientState idctl00ContentcusRatingInformationrepPageComponentsctl01cpePanelsClientState />
+
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl02pnlComponentHeading>
+
+<span idctl00ContentcusRatingInformationrepPageComponentsctl02lblComponentHeading classpageComponentHeading>Valuation</span>
+<img idctl00ContentcusRatingInformationrepPageComponentsctl02imgComponentSeparator src styleborderwidth:0px; />
+<img idctl00ContentcusRatingInformationrepPageComponentsctl02imgPanelCollapser src../../AppThemes/QLDC/Images/blank.gif alt styleborderwidth:0px; />
+
+</div>
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl02pnlComponent>
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl02cusPageComponentGridpnlCustomisationGrid>
+
+
+
+
+
+
+
+
+<div>
+<table classgrid cellspacing0 cellpadding3 rulescols border1 idctl00ContentcusRatingInformationrepPageComponentsctl02cusPageComponentGridrepWebGridctl00grdWebGridTabularView stylewidth:100;bordercollapse:collapse;>
+<tr classheaderRow>
+<th scopecol>Value Type</th><th scopecol>Value</th>
+</tr><tr classnormalRow>
+<td>Land Value</td><td>137000</td>
+</tr><tr classalternateRow>
+<td>Capital Value</td><td>460000</td>
+</tr><tr classnormalRow>
+<td>Improvement Val</td><td>323000</td>
+</tr><tr classalternateRow>
+<td>QV Land Area</td><td>0.0395</td>
+</tr>
+</table>
+</div>
+<span idctl00ContentcusRatingInformationrepPageComponentsctl02cusPageComponentGridrepWebGridctl00lblLimitedRows>Your results have been limited.</span>
+<br />
+
+
+
+
+
+</div>
+
+
+
+
+
+<br />
+
+</div>
+
+<input typehidden namectl00$Content$cusRatingInformation$repPageComponents$ctl02$cpePanelsClientState idctl00ContentcusRatingInformationrepPageComponentsctl02cpePanelsClientState />
+
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl03pnlComponentHeading>
+
+<span idctl00ContentcusRatingInformationrepPageComponentsctl03lblComponentHeading classpageComponentHeading>This Years Rates</span>
+<img idctl00ContentcusRatingInformationrepPageComponentsctl03imgComponentSeparator src styleborderwidth:0px; />
+<img idctl00ContentcusRatingInformationrepPageComponentsctl03imgPanelCollapser src../../AppThemes/QLDC/Images/blank.gif alt styleborderwidth:0px; />
+
+</div>
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl03pnlComponent>
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl03cusPageComponentGridpnlCustomisationGrid>
+
+
+<div idctl00ContentcusRatingInformationrepPageComponentsctl03cusPageComponentGridpnlNoRecords>
+
+<span idctl00ContentcusRatingInformationrepPageComponentsctl03cusPageComponentGridlblNoRecords classnoRowsFound>No information is available.</span>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<br />
+
+</div>
+
+<input typehidden namectl00$Content$cusRatingInformation$repPageComponents$ctl03$cpePanelsClientState idctl00ContentcusRatingInformationrepPageComponentsctl03cpePanelsClientState />
+
+
+
+</div>
+
+
+
+
+
+
+<noscript></noscript>
+<br />
+<input namectl00$Content$ctrlMap$hidVectorInformation typehidden idctl00ContentctrlMaphidVectorInformation />
+<input namectl00$Content$ctrlMap$hidLayerOption typehidden idctl00ContentctrlMaphidLayerOption />
+<input namectl00$Content$ctrlMap$hidWmsBoundaries typehidden idctl00ContentctrlMaphidWmsBoundaries />
