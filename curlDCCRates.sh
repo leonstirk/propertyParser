@@ -95,8 +95,6 @@ while [  $A -lt 331941 ]; do
       ERCSV="$EGRR$ERCS$ERKR$ERDC$ECWC"
       
       echo $ID",1,"$PDCSV","$CRCSV","$RLCSV$FRCSV","$ERCSV >> ratingIDsDCC.csv;
-
-      printf "$CLEANOP";
   fi
 
   if [ -n "$NODETAILS" ]
