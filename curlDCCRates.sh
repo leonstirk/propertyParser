@@ -1,6 +1,7 @@
 #!/bin/bash
 
 A=309117
+#A=331940
 while [  $A -lt 331941 ]; do
 # A=50
 # while [  $A -lt 100 ]; do
@@ -62,47 +63,60 @@ while [  $A -lt 331941 ]; do
 
       RLCSV="$RCS$GRR$RKR$CWC$RDC"
 
-      # Future Rates
+#       # Future Rates
 
-      FR=$(printf "$CLEANOP" | sed -n '/Future Rates/,/Estimated Rates/p')
+#       FR=$(printf "$CLEANOP" | sed -n '/Future Rates/,/Estimated Rates/p')
 
-      FUTURERATINGYEAR=$(printf "$FR" | sed -n '/Future rating year/{n;p;}')
-      FRATINGPERIOD=$(printf "$FR" | sed -n '/Future rating period/{n;p;}')
-      FRATEABILITY=$(printf "$FR" | sed -n '/Rateability/{n;p;}' | sed 's/ //g')
-      FRATINGDIFFERENTIAL=$(printf "$FR" | sed -n '/Rating differential/{n;p;}')
-      FLANDUSE=$(printf "$FR" | sed -n '/Land use/{n;p;}')
-      FLEGALDESCRIPTION=$(printf "$FR" | sed -n '/Legal description/{n;p;}')
-      FAREA=$(printf "$FR" | sed -n '/Area in hectares/{n;p;}')
-      FVALUEOFIMPROVEMENTS=$(printf "$FR" | sed -n '/Value of improvements/{n;p;}' | sed 's/,//g')
-      FLANDVALUE=$(printf "$FR" | sed -n '/Land value/{n;p;}' | sed 's/,//g')
-      FCAPITALVALUE=$(printf "$FR" | sed -n '/Capital value/{n;p;}' | sed 's/,//g')
-      FSEPERATEPARTS=$(printf "$FR" | sed -n '/Separately used or inhabited parts/{n;p;}')
+#       FUTURERATINGYEAR=$(printf "$FR" | sed -n '/Future rating year/{n;p;}')
+#       FRATINGPERIOD=$(printf "$FR" | sed -n '/Future rating period/{n;p;}')
+#       FRATEABILITY=$(printf "$FR" | sed -n '/Rateability/{n;p;}' | sed 's/ //g')
+#       FRATINGDIFFERENTIAL=$(printf "$FR" | sed -n '/Rating differential/{n;p;}')
+#       FLANDUSE=$(printf "$FR" | sed -n '/Land use/{n;p;}')
+#       FLEGALDESCRIPTION=$(printf "$FR" | sed -n '/Legal description/{n;p;}')
+#       FAREA=$(printf "$FR" | sed -n '/Area in hectares/{n;p;}')
+#       FVALUEOFIMPROVEMENTS=$(printf "$FR" | sed -n '/Value of improvements/{n;p;}' | sed 's/,//g')
+#       FLANDVALUE=$(printf "$FR" | sed -n '/Land value/{n;p;}' | sed 's/,//g')
+#       FCAPITALVALUE=$(printf "$FR" | sed -n '/Capital value/{n;p;}' | sed 's/,//g')
+#       FSEPERATEPARTS=$(printf "$FR" | sed -n '/Separately used or inhabited parts/{n;p;}')
 
-      FRCSV="$FUTURERATINGYEAR,$FRATINGPERIOD,$FRATEABILITY,$FRATINGDIFFERENTIAL,$FLANDUSE,$FLEGALDESCRIPTION,$FAREA,$FVALUEOFIMPROVEMENTS,$FLANDVALUE,$FCAPITALVALUE,$FSEPERATEPARTS"
+#       FRCSV="$FUTURERATINGYEAR,$FRATINGPERIOD,$FRATEABILITY,$FRATINGDIFFERENTIAL,$FLANDUSE,$FLEGALDESCRIPTION,$FAREA,$FVALUEOFIMPROVEMENTS,$FLANDVALUE,$FCAPITALVALUE,$FSEPERATEPARTS"
 
-      # Estimated Rates
+#       # Estimated Rates
 
-      ER=$(printf "$CLEANOP" | sed -n '/Estimated Rates/,$p')
+#       ER=$(printf "$CLEANOP" | sed -n '/Estimated Rates/,$p')
 
-      EGRR=$(printf "$ER" | sed -n '/General Rate  Residential/,/Residential Community Services/p' | sed '$d' | sed '/General Rate  Residential/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}')
-      ERCS=$(printf "$ER" | sed -n '/Residential Community Services/,/Residential Kerbside Recycling/p' | sed '$d' | sed '/Residential Community Services/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}'\
-	  )
-      ERKR=$(printf "$ER" | sed -n '/Residential Kerbside Recycling/,/Residential Drainage Connected/p'  | sed '$d' | sed '/Residential Kerbside Recycling/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}\
-')
-      ERDC=$(printf "$ER" | sed -n '/Residential Drainage Connected/,/Citywide Water Connected/p' | sed '$d' | sed '/Residential Drainage Connected/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}')
-      ECWC=$(printf "$ER" | sed -n '/Citywide Water Connected/,$p' | sed '/Citywide Water Connected/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}')
+#       EGRR=$(printf "$ER" | sed -n '/General Rate  Residential/,/Residential Community Services/p' | sed '$d' | sed '/General Rate  Residential/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}')
+#       ERCS=$(printf "$ER" | sed -n '/Residential Community Services/,/Residential Kerbside Recycling/p' | sed '$d' | sed '/Residential Community Services/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}'\
+# 	  )
+#       ERKR=$(printf "$ER" | sed -n '/Residential Kerbside Recycling/,/Residential Drainage Connected/p'  | sed '$d' | sed '/Residential Kerbside Recycling/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}\
+# ')
+#       ERDC=$(printf "$ER" | sed -n '/Residential Drainage Connected/,/Citywide Water Connected/p' | sed '$d' | sed '/Residential Drainage Connected/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}')
+#       ECWC=$(printf "$ER" | sed -n '/Citywide Water Connected/,$p' | sed '/Citywide Water Connected/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=";";}''{print}')
 
-      ERCSV="$EGRR$ERCS$ERKR$ERDC$ECWC"
+#       ERCSV="$EGRR$ERCS$ERKR$ERDC$ECWC"
       
-      echo $ID",1,"$PDCSV","$CRCSV","$RLCSV$FRCSV","$ERCSV >> ratingIDsDCC.csv;
+      # echo $ID",1,"$PDCSV","$CRCSV","$RLCSV$FRCSV","$ERCSV >> ratingIDsDCC.csv;
+      echo $ID",1,"$PDCSV","$CRCSV","$RLCSV >> ratingIDsDCC.csv;
+      echo "OK";
   fi
 
   if [ -n "$NODETAILS" ]
   then
       echo "No record exists"
       echo $ID",0" >> ratingIDsDCC.csv;
+      echo "OK";
   fi
+
+  #call time randomizer
+
+  FLATTIME=$(date "+%H%M");
+  RANGE=10
+  MINIMUM=1
+
+  RAND=$(( $RANGE * $RANDOM / 32767 + $MINIMUM))
+
+  echo "wait $RAND";
+  sleep $RAND;
   
-  sleep 3;
   let A=A+1
 done
