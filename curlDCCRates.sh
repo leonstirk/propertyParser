@@ -1,8 +1,7 @@
 #!/bin/bash
 
-A=309117
-#A=331940
-while [  $A -lt 331941 ]; do
+A=309236
+while [  $A -lt 309237 ]; do
 # A=50
 # while [  $A -lt 100 ]; do
   ID=$( printf '%06d' $A )
@@ -27,7 +26,7 @@ while [  $A -lt 331941 ]; do
       RATEID=$(printf "$PD" | sed -n '/Rate account ID/{n;p;}')
       PROPERTYNO=$(printf "$PD" | sed -n '/Property number/{n;p;}')
       PROPERTYADDRESS=$(printf "$PD" | sed -n '/Property address/{n;p;}')
-      CERTOFTITLE=$(printf "$PD" | sed -n '/Certificate(s) of title (guide only)/{n;p;}')
+      CERTOFTITLE=$(printf "$PD" | sed -n '/Certificate(s) of title (guide only)/{n;p;}' | awk 'BEGIN{RS=","; ORS=" ";}''{print}')
       RATEPAYERNAMES=$(printf "$PD" | sed -n '/Ratepayer name(s)/{n;p;}')
       POSTALADDRESS=$(printf "$PD" | sed -n '/Postal address for this assessment/,/Current Rates/p' | sed '/Postal address for this assessment/d;/Current Rates/d' | awk 'BEGIN{RS="\n"; ORS=" ";}''{print}')
 
@@ -42,7 +41,7 @@ while [  $A -lt 331941 ]; do
       RATEABILITY=$(printf "$CR" | sed -n '/Rateability/{n;p;}' | sed 's/ //g')
       RATINGDIFFERENTIAL=$(printf "$CR" | sed -n '/Rating differential/{n;p;}')
       LANDUSE=$(printf "$CR" | sed -n '/Land use/{n;p;}')
-      LEGALDESCRIPTION=$(printf "$CR" | sed -n '/Legal description/{n;p;}')
+      LEGALDESCRIPTION=$(printf "$CR" | sed -n '/Legal description/{n;p;}' | awk 'BEGIN{RS=","; ORS=" ";}''{print}')
       AREA=$(printf "$CR" | sed -n '/Area in hectares/{n;p;}')
       VALUEOFIMPROVEMENTS=$(printf "$CR" | sed -n '/Value of improvements/{n;p;}' | sed 's/,//g')
       LANDVALUE=$(printf "$CR" | sed -n '/Land value/{n;p;}' | sed 's/,//g')
@@ -56,11 +55,15 @@ while [  $A -lt 331941 ]; do
       RL=$(printf "$CLEANOP" | sed -n '/Rates levied/,/Show full rates breakdown/p')
 
       RCS=$(printf "$RL" | sed -n '/Residential Community Services/,/General Rate  Residential/p' | sed '$d' | sed '/Residential Community Services/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=",";}''{print}')
-      GRR=$(printf "$RL" | sed -n '/General Rate  Residential/,/Residential Kerbside Recycling/p' | sed '$d' | sed '/General Rate  Residential/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=",";}''{print}')
-      RKR=$(printf "$RL" | sed -n '/Residential Kerbside Recycling/,/Citywide Water Connected/p'  | sed '$d' | sed '/Residential Kerbside Recycling/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=",";}''{print}')
-      CWC=$(printf "$RL" | sed -n '/Citywide Water Connected/,/Residential Drainage Connected/p'  | sed '$d' | sed '/Citywide Water Connected/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=",";}''{print}')
+      GRR=$(printf "$RL" | sed -n '/General Rate/,/Kerbside Recycling/p' | sed '$d' | sed '/General Rate  Residential/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=",";}''{print}')
+      RKR=$(printf "$RL" | sed -n '/Kerbside Recycling/,/Citywide Water Connected/p'  | sed '$d' | sed '/Residential Kerbside Recycling/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=",";}''{print}')
+      CWC=$(printf "$RL" | sed -n '/Citywide Water Connected/,/Drainage Connected/p'  | sed '$d' | sed '/Citywide Water Connected/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=",";}''{print}')
       RDC=$(printf "$RL" | sed -n '/Residential Drainage Connected/,/Show full rates breakdown/p' | sed '$d' | sed '/Residential Drainage Connected/d' | sed 's/,//g' | awk 'BEGIN{RS="\n";ORS=",";}''{print}')
 
+      echo
+      printf "RL: $RL"
+      echo
+      
       RLCSV="$RCS$GRR$RKR$CWC$RDC"
 
 #       # Future Rates
