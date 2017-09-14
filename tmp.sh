@@ -5,14 +5,11 @@
 A=309236 # Lots of titles
 ID=$( printf '%06d' $A )
 
-# W=$(curl -s http://www.dunedin.govt.nz/services/rates-information/rates?ratingID=$ID | pup | sed -n '/PAGE CONTENT GOES HERE -->/,/content -->/p' | sed 's/://g' | sed 's/<br>/:/g')
+W=$(curl -s http://www.dunedin.govt.nz/services/rates-information/rates?ratingID=$ID | pup | sed -n '/PAGE CONTENT GOES HERE -->/,/content -->/p' | sed 's/://g' | sed 's/<br>/:/g')
 
 # curl -s http://www.dunedin.govt.nz/services/rates-information/rates?ratingID=$ID | pup | sed -n '/PAGE CONTENT GOES HERE -->/,/content -->/p' | sed 's/://g' | sed 's/<br>/:/g' | pup > page.html
 
-W=$(cat page.html)
-
-rm -f test.csv
-touch test.csv
+# W=$(cat page.html)
 
 OUTHED=()
 OUTPUT=()
@@ -125,10 +122,12 @@ while [ $i -lt $TLN ]; do
 	while [ $n -lt ${#TMP[@]} ]; do
 	    IFS=',' read -r -a CELS <<< "${TMP[$n]}"
 	    
-	    m=0
+	    m=1
 	    while [ $m -lt ${#CELS[@]} ]; do
 
-	    	HBOD=("${HBOD[@]}" "$CAP.${HED[$m]}")
+		CC=$(echo ${CELS[0]} |  awk '{ for ( i=1; i <= NF; i++) { sub(".", substr(toupper($i), 1,1) , $i); print $i; } }')
+		CC=$(echo $CC | sed 's/ //g') 
+	    	HBOD=("${HBOD[@]}" "$CAP.$CC.${HED[$m]}")
 	        DBOD=("${DBOD[@]}" "${CELS[$m]}")
 
 	    	m=$(($m+1))
@@ -137,19 +136,23 @@ while [ $i -lt $TLN ]; do
 	    n=$(($n+1))
 	done
 
-	# echo ${HBOD[@]}
-	# echo ${DBOD[@]}
+	# echo $(IFS=, ; echo "${HBOD[*]}") >> test.csv
+	# echo $(IFS=, ; echo "${DBOD[*]}") >> test.csv
 	
     else
+
 	TMP=()
 	for n in ${HBOD[@]}; do
 	    TMP=("${TMP[@]}" "$CAP.$n")
 	done
-	HBOD=${TMP[@]}
-	# echo ${HBOD[@]}
+	HBOD=("${TMP[@]}")
 	TMP=()
 	DBOD=$(echo ${DBOD[@]} | sed 's/; //g' | sed 's/,;//g')
 	IFS=',' read -r -a DBOD <<< "$DBOD"
+
+	# echo $(IFS=, ; echo "${HBOD[*]}") >> test.csv
+	# echo $(IFS=, ; echo "${DBOD[*]}") >> test.csv
+	
     fi
 
     OUTHED=("${OUTHED[@]}" "${HBOD[@]}")
@@ -164,5 +167,9 @@ while [ $i -lt $TLN ]; do
     i=$(($i+1))
 done
 
-echo ${#OUTHED[@]}
-echo ${#OUTPUT[@]}
+# echo ${OUTHED[@]}
+# echo ${OUTPUT[@]}
+
+echo $(IFS=, ; echo "${OUTHED[*]}") >> test.csv
+echo $(IFS=, ; echo "${OUTPUT[*]}") >> test.csv
+
