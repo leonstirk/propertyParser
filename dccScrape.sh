@@ -2,11 +2,11 @@
 
 
 # A=348577 # Emerson Street
-# A=331940 # Marion Street
-A=309236 # Lots of titles
+A=331940 # Marion Street
+# A=309236 # Lots of titles
 # A=309144 # No record
 
-while [  $A -lt 309240 ]; do
+while [  $A -lt 331950 ]; do
     ID=$( printf '%06d' $A )
 
     echo $ID;
@@ -183,8 +183,8 @@ while [  $A -lt 309240 ]; do
 	OUTHED=("ID" "${OUTHED[@]}")
 	OUTPUT=("$ID" "${OUTPUT[@]}")
 
-	echo $(IFS=, ; echo "${OUTHED[*]}") >> test.csv
-	echo $(IFS=, ; echo "${OUTPUT[*]}") >> test.csv
+	echo $(IFS=, ; echo "${OUTHED[*]}") >> csv/$ID.csv
+	echo $(IFS=, ; echo "${OUTPUT[*]}") >> csv/$ID.csv
 	
 	echo "OK";
     fi
@@ -197,8 +197,8 @@ while [  $A -lt 309240 ]; do
     #call time randomizer
 
     FLATTIME=$(date "+%H%M");
-    RANGE=10
-    MINIMUM=5
+    RANGE=6
+    MINIMUM=3
 
     RAND=$(( $RANGE * $RANDOM / 32767 + $MINIMUM))
 
