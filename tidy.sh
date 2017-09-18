@@ -2,4 +2,4 @@
 
 rm -f *~
 
-rm -f ./csv/*.csv
+# rm -f ./csv/*.csv

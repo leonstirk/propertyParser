@@ -2,11 +2,13 @@
 
 
 # A=348577 # Emerson Street
-A=331940 # Marion Street
+# A=331940 # Marion Street
 # A=309236 # Lots of titles
 # A=309144 # No record
 
-while [  $A -lt 331950 ]; do
+A=314053
+
+while [  $A -lt 320000 ]; do
     ID=$( printf '%06d' $A )
 
     echo $ID;
@@ -197,8 +199,8 @@ while [  $A -lt 331950 ]; do
     #call time randomizer
 
     FLATTIME=$(date "+%H%M");
-    RANGE=6
-    MINIMUM=3
+    RANGE=0
+    MINIMUM=0
 
     RAND=$(( $RANGE * $RANDOM / 32767 + $MINIMUM))
 
