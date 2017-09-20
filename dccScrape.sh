@@ -6,9 +6,10 @@
 # A=309236 # Lots of titles
 # A=309144 # No record
 
-A=314868
+A=316070
 
-while [  $A -lt 320000 ]; do
+
+while [  $A -lt 316071 ]; do
     ID=$( printf '%06d' $A )
 
     echo $ID;
