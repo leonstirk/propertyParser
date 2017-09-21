@@ -8,8 +8,6 @@ while [  $A -lt 28087 ]; do
 
     echo $ID;
 
-
-
     WEBGET=$(curl -s "https://services.qldc.govt.nz/eProperty/P1/eRates/RatingInformation.aspx?r=QLDC.WEB.GUEST&f=%24P1.ERA.RATDETAL.VIW&PropertyNo="$ID | sed -n '/class="pageComponentHeading">Property Details/,/ctl00_Content_ctrlMap_hidWmsBoundaries/p' | sed 's/[^A-Za-z0-9,.:;\$\/\@\(\)\b \b<>]//g' | sed 's/^[ \t]*//;s/[ \t]*$//');
 
     printf "$WEBGET" > output.txt;
