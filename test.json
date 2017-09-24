@@ -1,0 +1,769 @@
+[
+ {
+  "class": "pageComponentHeading",
+  "id": "ctl00_Content_cusRatingInformation_repPageComponents_ctl00_lblComponentHeading",
+  "tag": "span",
+  "text": "Property Details"
+ },
+ {
+  "class": "pageComponentHeading",
+  "id": "ctl00_Content_cusRatingInformation_repPageComponents_ctl01_lblComponentHeading",
+  "tag": "span",
+  "text": "Owner with Address"
+ },
+ {
+  "class": "pageComponentHeading",
+  "id": "ctl00_Content_cusRatingInformation_repPageComponents_ctl02_lblComponentHeading",
+  "tag": "span",
+  "text": "Valuation"
+ },
+ {
+  "class": "pageComponentHeading",
+  "id": "ctl00_Content_cusRatingInformation_repPageComponents_ctl03_lblComponentHeading",
+  "tag": "span",
+  "text": "This Years Rates"
+ },
+ {
+  "border": "1",
+  "cellpadding": "3",
+  "cellspacing": "0",
+  "children": [
+   {
+    "children": [
+     {
+      "children": [
+       {
+        "class": "headerColumn",
+        "tag": "td",
+        "text": "Valuation Number:"
+       },
+       {
+        "tag": "td",
+        "text": "2907400565"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "class": "headerColumn",
+        "tag": "td",
+        "text": "Location:"
+       },
+       {
+        "tag": "td",
+        "text": "23 B Onslow Road LAKE HAYES 9304"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "class": "headerColumn",
+        "tag": "td",
+        "text": "Legal Description:"
+       },
+       {
+        "tag": "td",
+        "text": "LOT 11 DP 447985"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "class": "headerColumn",
+        "tag": "td",
+        "text": "Certificate Of Title"
+       },
+       {
+        "tag": "td",
+        "text": "566460"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "class": "headerColumn",
+        "tag": "td",
+        "text": "Nature Of Improvements:"
+       },
+       {
+        "tag": "td",
+        "text": "DWG OI"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "class": "headerColumn",
+        "tag": "td",
+        "text": "Visitor Accommodation Code:"
+       },
+       {
+        "tag": "td",
+        "text": "RO"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     }
+    ],
+    "tag": "tbody"
+   }
+  ],
+  "class": "grid",
+  "id": "ctl00_Content_cusRatingInformation_repPageComponents_ctl00_cusPageComponentGrid_repWebGrid_ctl00_dtvWebGridListView",
+  "rules": "cols",
+  "style": "width:100%;border-collapse:collapse;",
+  "tag": "table"
+ },
+ {
+  "border": "1",
+  "cellpadding": "3",
+  "cellspacing": "0",
+  "children": [
+   {
+    "children": [
+     {
+      "children": [
+       {
+        "children": [
+         {
+          "href": "javascript:__doPostBack(\u0026#39;ctl00$Content$cusRatingInformation$repPageComponents$ctl01$cusPageComponentGrid$repWebGrid$ctl00$grdWebGridTabularView\u0026#39;,\u0026#39;Sort$DisplayName\u0026#39;)",
+          "tag": "a",
+          "text": "Owners"
+         }
+        ],
+        "scope": "col",
+        "tag": "th"
+       },
+       {
+        "children": [
+         {
+          "href": "javascript:__doPostBack(\u0026#39;ctl00$Content$cusRatingInformation$repPageComponents$ctl01$cusPageComponentGrid$repWebGrid$ctl00$grdWebGridTabularView\u0026#39;,\u0026#39;Sort$FormattedAddress\u0026#39;)",
+          "tag": "a",
+          "text": "Postal Address"
+         }
+        ],
+        "scope": "col",
+        "tag": "th"
+       }
+      ],
+      "class": "headerRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "Avery and Associates Limited"
+       },
+       {
+        "tag": "td",
+        "text": "C/- Mr A J Avery 23B Onslow Road Lower Shotover QUEENSTOWN 9304"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     }
+    ],
+    "tag": "tbody"
+   }
+  ],
+  "class": "grid",
+  "id": "ctl00_Content_cusRatingInformation_repPageComponents_ctl01_cusPageComponentGrid_repWebGrid_ctl00_grdWebGridTabularView",
+  "rules": "cols",
+  "style": "width:100%;border-collapse:collapse;",
+  "tag": "table"
+ },
+ {
+  "border": "1",
+  "cellpadding": "3",
+  "cellspacing": "0",
+  "children": [
+   {
+    "children": [
+     {
+      "children": [
+       {
+        "scope": "col",
+        "tag": "th",
+        "text": "Value Type"
+       },
+       {
+        "scope": "col",
+        "tag": "th",
+        "text": "Value"
+       }
+      ],
+      "class": "headerRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "Land Value*"
+       },
+       {
+        "tag": "td",
+        "text": "137000"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "Capital Value*"
+       },
+       {
+        "tag": "td",
+        "text": "460000"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "Improvement Val"
+       },
+       {
+        "tag": "td",
+        "text": "323000"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "QV Land Area"
+       },
+       {
+        "tag": "td",
+        "text": "0.0395"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     }
+    ],
+    "tag": "tbody"
+   }
+  ],
+  "class": "grid",
+  "id": "ctl00_Content_cusRatingInformation_repPageComponents_ctl02_cusPageComponentGrid_repWebGrid_ctl00_grdWebGridTabularView",
+  "rules": "cols",
+  "style": "width:100%;border-collapse:collapse;",
+  "tag": "table"
+ },
+ {
+  "border": "1",
+  "cellpadding": "3",
+  "cellspacing": "0",
+  "children": [
+   {
+    "children": [
+     {
+      "children": [
+       {
+        "children": [
+         {
+          "href": "javascript:__doPostBack(\u0026#39;ctl00$Content$cusRatingInformation$repPageComponents$ctl03$cusPageComponentGrid$repWebGrid$ctl00$grdWebGridTabularView\u0026#39;,\u0026#39;Sort$ChargeCtr\u0026#39;)",
+          "tag": "a",
+          "text": "Reference"
+         }
+        ],
+        "scope": "col",
+        "tag": "th"
+       },
+       {
+        "children": [
+         {
+          "href": "javascript:__doPostBack(\u0026#39;ctl00$Content$cusRatingInformation$repPageComponents$ctl03$cusPageComponentGrid$repWebGrid$ctl00$grdWebGridTabularView\u0026#39;,\u0026#39;Sort$ChargeTypeDescr\u0026#39;)",
+          "tag": "a",
+          "text": "Description(basis)"
+         }
+        ],
+        "scope": "col",
+        "tag": "th"
+       },
+       {
+        "children": [
+         {
+          "href": "javascript:__doPostBack(\u0026#39;ctl00$Content$cusRatingInformation$repPageComponents$ctl03$cusPageComponentGrid$repWebGrid$ctl00$grdWebGridTabularView\u0026#39;,\u0026#39;Sort$Quantity\u0026#39;)",
+          "tag": "a",
+          "text": "Factor"
+         }
+        ],
+        "scope": "col",
+        "tag": "th"
+       },
+       {
+        "children": [
+         {
+          "href": "javascript:__doPostBack(\u0026#39;ctl00$Content$cusRatingInformation$repPageComponents$ctl03$cusPageComponentGrid$repWebGrid$ctl00$grdWebGridTabularView\u0026#39;,\u0026#39;Sort$ChargeComment\u0026#39;)",
+          "tag": "a",
+          "text": "Rate"
+         }
+        ],
+        "scope": "col",
+        "tag": "th"
+       },
+       {
+        "children": [
+         {
+          "href": "javascript:__doPostBack(\u0026#39;ctl00$Content$cusRatingInformation$repPageComponents$ctl03$cusPageComponentGrid$repWebGrid$ctl00$grdWebGridTabularView\u0026#39;,\u0026#39;Sort$Amount\u0026#39;)",
+          "tag": "a",
+          "text": "Amount"
+         }
+        ],
+        "scope": "col",
+        "tag": "th"
+       }
+      ],
+      "class": "headerRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854741"
+       },
+       {
+        "tag": "td",
+        "text": "Rec \u0026amp; Events Chg MU ResAccom"
+       },
+       {
+        "tag": "td",
+        "text": "1"
+       },
+       {
+        "tag": "td",
+        "text": "305.00"
+       },
+       {
+        "tag": "td",
+        "text": "$305.00"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854742"
+       },
+       {
+        "tag": "td",
+        "text": "General Rate Mixed Use Accom"
+       },
+       {
+        "tag": "td",
+        "text": "460000"
+       },
+       {
+        "tag": "td",
+        "text": "0.0063"
+       },
+       {
+        "tag": "td",
+        "text": "$28.98"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854743"
+       },
+       {
+        "tag": "td",
+        "text": "Roading Mix Use Accom Res Wak"
+       },
+       {
+        "tag": "td",
+        "text": "460000"
+       },
+       {
+        "tag": "td",
+        "text": "0.0614"
+       },
+       {
+        "tag": "td",
+        "text": "$282.44"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854744"
+       },
+       {
+        "tag": "td",
+        "text": "Stormwater M U Accom Wakatipu"
+       },
+       {
+        "tag": "td",
+        "text": "460000"
+       },
+       {
+        "tag": "td",
+        "text": "0.0112"
+       },
+       {
+        "tag": "td",
+        "text": "$51.52"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854745"
+       },
+       {
+        "tag": "td",
+        "text": "Tourism Promo Mixed Use Wak"
+       },
+       {
+        "tag": "td",
+        "text": "460000"
+       },
+       {
+        "tag": "td",
+        "text": "0.0292"
+       },
+       {
+        "tag": "td",
+        "text": "$134.32"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854735"
+       },
+       {
+        "tag": "td",
+        "text": "Aquatic Centre Charge Wakatipu"
+       },
+       {
+        "tag": "td",
+        "text": "1"
+       },
+       {
+        "tag": "td",
+        "text": "100.00"
+       },
+       {
+        "tag": "td",
+        "text": "$100.00"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854746"
+       },
+       {
+        "tag": "td",
+        "text": "Governance \u0026amp; Reg Chg M U Accom"
+       },
+       {
+        "tag": "td",
+        "text": "1"
+       },
+       {
+        "tag": "td",
+        "text": "75.60"
+       },
+       {
+        "tag": "td",
+        "text": "$75.60"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854747"
+       },
+       {
+        "tag": "td",
+        "text": "Governance Mixed Use Accom Res"
+       },
+       {
+        "tag": "td",
+        "text": "460000"
+       },
+       {
+        "tag": "td",
+        "text": "0.0162"
+       },
+       {
+        "tag": "td",
+        "text": "$74.52"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854748"
+       },
+       {
+        "tag": "td",
+        "text": "Recreation Mixed Use Accom Res"
+       },
+       {
+        "tag": "td",
+        "text": "460000"
+       },
+       {
+        "tag": "td",
+        "text": "0.0427"
+       },
+       {
+        "tag": "td",
+        "text": "$196.42"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854749"
+       },
+       {
+        "tag": "td",
+        "text": "Regulatory Mixed Use Accom Res"
+       },
+       {
+        "tag": "td",
+        "text": "460000"
+       },
+       {
+        "tag": "td",
+        "text": "0.0258"
+       },
+       {
+        "tag": "td",
+        "text": "$118.68"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854736"
+       },
+       {
+        "tag": "td",
+        "text": "Sewerage Lake Hayes"
+       },
+       {
+        "tag": "td",
+        "text": "1"
+       },
+       {
+        "tag": "td",
+        "text": "480.00"
+       },
+       {
+        "tag": "td",
+        "text": "$480.00"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854737"
+       },
+       {
+        "tag": "td",
+        "text": "Sports Halls \u0026amp; Libraries"
+       },
+       {
+        "tag": "td",
+        "text": "1"
+       },
+       {
+        "tag": "td",
+        "text": "327.00"
+       },
+       {
+        "tag": "td",
+        "text": "$327.00"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854738"
+       },
+       {
+        "tag": "td",
+        "text": "Water Lake Hayes Annual Chg"
+       },
+       {
+        "tag": "td",
+        "text": "1"
+       },
+       {
+        "tag": "td",
+        "text": "500.00"
+       },
+       {
+        "tag": "td",
+        "text": "$500.00"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854739"
+       },
+       {
+        "tag": "td",
+        "text": "Waste Management Charge"
+       },
+       {
+        "tag": "td",
+        "text": "1"
+       },
+       {
+        "tag": "td",
+        "text": "129.00"
+       },
+       {
+        "tag": "td",
+        "text": "$129.00"
+       }
+      ],
+      "class": "alternateRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "tag": "td",
+        "text": "1854740"
+       },
+       {
+        "tag": "td",
+        "text": "Uniform Annual General Charge"
+       },
+       {
+        "tag": "td",
+        "text": "1"
+       },
+       {
+        "tag": "td",
+        "text": "80.00"
+       },
+       {
+        "tag": "td",
+        "text": "$80.00"
+       }
+      ],
+      "class": "normalRow",
+      "tag": "tr"
+     },
+     {
+      "children": [
+       {
+        "align": "left",
+        "colspan": "3",
+        "tag": "td",
+        "text": "Total Rates"
+       },
+       {
+        "tag": "td",
+        "text": "Ã‚"
+       },
+       {
+        "tag": "td",
+        "text": "$2,883.48"
+       }
+      ],
+      "class": "footerRow",
+      "tag": "tr"
+     }
+    ],
+    "tag": "tbody"
+   }
+  ],
+  "class": "grid",
+  "id": "ctl00_Content_cusRatingInformation_repPageComponents_ctl03_cusPageComponentGrid_repWebGrid_ctl00_grdWebGridTabularView",
+  "rules": "cols",
+  "style": "width:100%;border-collapse:collapse;",
+  "tag": "table"
+ }
+]
