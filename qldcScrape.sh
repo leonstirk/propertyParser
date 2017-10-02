@@ -13,46 +13,96 @@ while [  $A -lt 28087 ]; do
 
     W=$(cat page.html)
 
-    # Split into an array of titles and an array of tables
-    H=$(echo $W | pup '.pageComponentHeading json{}')
-    T=$(echo $W | pup 'table tbody json{}')
-
     # Check the arrays are of the same length
-    HLEN=$(echo $H | jq 'map(select(.)) | length')
-    TLEN=$(echo $T | jq 'map(select(.)) | length')
+    HLEN=$(echo $W | pup '.pageComponentHeading json{}' | jq 'map(select(.)) | length')
+    PLEN=$(echo $W | pup 'table tbody json{}' | jq 'map(select(.)) | length')
 
-    echo $HLEN
-    echo $TLEN
-
-    if [ $HLEN -eq $TLEN ]; then
-	echo 'Lengths are equal. Proceed'
+    if [ $HLEN -eq $PLEN ]; then
 	
-	# i loops through each table
+	H=$(echo $W | pup '.pageComponentHeading json{}' | jq '.')
+	P=$(echo $W | pup 'table tbody json{}' | jq '.')
+	
+	# i loops through each table section
+	THED=()
+
 	i=0
-	while [ $i -lt $HLEN ]; do 
-	    B=$(echo $H | jq '.['$i'].text')
+	while [ $i -lt $PLEN ]; do 
 
-	    RLEN=$(echo $T | jq '[.['$i'].children[]] | length')
-	    echo $RLEN
+	    # create array of table headers
+	    HED=$(echo $H | jq '.['$i'].text')
+	    THED=("${THED[@]}" "$HED")
 
+	    T=$(echo $P | jq '[.['$i']]')
+
+
+	    COLHED=()
+	    COLBOD=()
+	    # count rows and loop through each row
+	    RLN=$(echo $T | jq '[.[].children[]] | length')
 	    j=0
-	    while [ $j -lt $RLEN ]; do
-		CLEN=$(echo $T | jq '[.['$i'].children['$j'].children[]] | length')
+	    while [ $j -lt $RLN ]; do
 
-		k=0
-		while [ $k -lt $CLEN ]; do
-		    echo $T | jq '.['$i'].children['$j'].children['$k'].text'
-		    let k=k+1
-		done
+	    	R=$(echo $T | jq '[.[].children['$j']]')
 
-		let j=j+1
+		ISHED=$(echo $R | jq 'map(select(.class == "headerRow")) | length > 0')
+		ISNRM=$(echo $R | jq 'map(select(.class == "normalRow")) | length > 0')
+		ISALT=$(echo $R | jq 'map(select(.class == "alternateRow")) | length > 0')
+		ISFOT=$(echo $R | jq 'map(select(.class == "footerRow")) | length > 0')
+
+	    	CLN=$(echo $R | jq '[.[].children[]] | length')
+	    	k=0
+	    	while [ $k -lt $CLN ]; do
+	    	    C=$(echo $R | jq '[.[].children['$k']]')
+
+		    if [ $ISHED == 'true' ]; then
+			NBTN=$(echo $C | jq '.[].text | length > 0')
+			if [ $NBTN == 'true' ]; then
+			    COLVAL=$(echo $C | jq '.[].text')
+			else
+			    COLVAL=$(echo $C | jq '.[].children[].text')
+			fi
+
+			COLHED=("${COLHED[@]}" "$COLVAL")
+		    fi
+
+		    if [ $ISNRM == 'true' -o $ISALT == 'true' -o $ISFOT == 'true' ]; then
+			# If not a header row is it a header column?
+			ISHC=$(echo $C | jq '.[].class')
+			if [ $ISHC == '"headerColumn"' ]; then 
+			    COLVAL=$(echo $C | jq '.[].text')
+			    COLHED=("{COLHED[@]}" "$COLVAL")
+			else
+		    	    COLVAL=$(echo $C | jq '.[].text')
+			    COLBOD=("{COLBOD[@]}" "$COLVAL")
+			fi
+
+		    fi
+
+	    	    let k=k+1
+	    	done
+
+
+
+
+	    	let j=j+1
 	    done
 
+	    if [ ${#COLHED[@]} -eq 0 ]; then
+		CC=$(echo ${THED[$i]} |  awk '{ for ( i=1; i <= NF; i++) { sub(".", substr(toupper($i), 1,1) , $i); print $i; } }')
+                CC=$(echo $CC | sed 's/ //g' | sed 's/"//g')
+		echo $CC
+	    else
+		m=0
+		while [ $m -lt ${#COLHED[@]} ]; do
+		    CC=$(echo ${THED[$i]}'.'${COLHED[$m]} |  awk '{ for ( i=1; i <= NF; i++) { sub(".", substr(toupper($i), 1,1) , $i); print $i; } }')
+                    CC=$(echo $CC | sed 's/ //g' | sed 's/"//g')
+		    echo $CC
+		    let m=m+1
+		done
+	    fi
 
 	    let i=i+1
-
 	done
-
 
     fi
 
