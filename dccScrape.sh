@@ -8,7 +8,7 @@
 
 A=360000
 
-while [  $A -lt 370000 ]; do
+while [ $A -lt 370000 ]; do
     ID=$( printf '%06d' $A )
 
     echo $ID;

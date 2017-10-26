@@ -1,0 +1,405 @@
+[
+  {
+    "tag": "div",
+    "id": "snapshot",
+    "class": "dictionary-screen inset",
+    "children": [
+      {
+        "tag": "div",
+        "id": "price-info",
+        "children": [
+          {
+            "text": "RYM",
+            "tag": "span",
+            "class": "info-code"
+          },
+          {
+            "text": "$8.940",
+            "tag": "span",
+            "class": "value"
+          },
+          {
+            "text": "$0.090 / 1.02%",
+            "tag": "span",
+            "class": "info-movement positive-movement"
+          },
+          {
+            "title": "The 52 Week Change is calculated based on an issuer’s unadjusted share price over the period. Please be aware that from 1 April 2015 the calculation will be updated to reflect an issuer’s share price adjusted for corporate actions (for example, share splits). The updated 52 Week Change will be consistent with the &#39;Rolling Year&#39; data displayed on NZX’s Company Research Centre, which is adjusted for corporate actions.",
+            "tag": "div",
+            "children": [
+              {
+                "text": "52 Week Change:",
+                "tag": "span",
+                "class": "info-fiftytwowk-movement"
+              },
+              {
+                "text": "$0.459 / 5.361%",
+                "tag": "span",
+                "class": "positive-movement"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "dl",
+        "children": [
+          {
+            "text": "Issued By",
+            "tag": "dt"
+          },
+          {
+            "tag": "dd",
+            "children": [
+              {
+                "text": "Ryman Healthcare Limited",
+                "tag": "a",
+                "href": "/companies/RYM"
+              }
+            ]
+          },
+          {
+            "text": "ISIN",
+            "tag": "dt"
+          },
+          {
+            "text": "NZRYME0001S4",
+            "tag": "dd"
+          },
+          {
+            "text": "Security Type",
+            "tag": "dt"
+          },
+          {
+            "text": "Ordinary Shares",
+            "tag": "dd"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tag": "div",
+    "id": "activity",
+    "class": "col span1of3",
+    "children": [
+      {
+        "tag": "section",
+        "class": "mini-table-screen table-screen screen",
+        "children": [
+          {
+            "tag": "header",
+            "children": [
+              {
+                "text": "Activity",
+                "tag": "h2"
+              }
+            ]
+          },
+          {
+            "tag": "table",
+            "children": [
+              {
+                "tag": "tbody",
+                "children": [
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Trading Status",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "Trading",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Trades",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "94",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Value",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "$8,752,364.85",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Volume",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "978,281",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Capitalisation (000s)",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "$4,470,000",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tag": "div",
+    "id": "performance",
+    "class": "col span1of3",
+    "children": [
+      {
+        "tag": "section",
+        "class": "mini-table-screen table-screen screen",
+        "children": [
+          {
+            "tag": "header",
+            "children": [
+              {
+                "text": "Performance",
+                "tag": "h2"
+              }
+            ]
+          },
+          {
+            "tag": "table",
+            "children": [
+              {
+                "tag": "tbody",
+                "children": [
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Open",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "$8.850",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "High",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "$9.000",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Low",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "$8.940",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "High Bid",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "$8.940",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Low Offer",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "$8.950",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tag": "div",
+    "id": "fundamental",
+    "class": "col span1of3",
+    "children": [
+      {
+        "tag": "section",
+        "class": "mini-table-screen table-screen screen",
+        "children": [
+          {
+            "tag": "header",
+            "children": [
+              {
+                "text": "Fundamental",
+                "tag": "h2"
+              }
+            ]
+          },
+          {
+            "tag": "table",
+            "children": [
+              {
+                "tag": "tbody",
+                "children": [
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "tag": "th",
+                        "children": [
+                          {
+                            "title": "Price/Earnings Ratio",
+                            "text": "P/E",
+                            "tag": "abbr"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "12.410",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "tag": "th",
+                        "children": [
+                          {
+                            "title": "Earnings Per Share",
+                            "text": "EPS",
+                            "tag": "abbr"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "$0.713",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "tag": "th",
+                        "children": [
+                          {
+                            "title": "Net Tangible Assets Per Share",
+                            "text": "NTA",
+                            "tag": "abbr"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "$3.288",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Gross Div Yield",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "2.011%",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "tr",
+                    "children": [
+                      {
+                        "text": "Shares Issued",
+                        "tag": "th"
+                      },
+                      {
+                        "text": "500,000,000",
+                        "tag": "td",
+                        "class": "numeric"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
