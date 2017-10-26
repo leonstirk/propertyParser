@@ -4,4 +4,4 @@ cleanup
 
 git add -A
 git commit -m "auto-commit"
-pit push origin master
+git push origin master
