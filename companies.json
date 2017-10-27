@@ -972,39 +972,6 @@
         "tag": "td",
         "children": [
           {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "AMIRI LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
             "tag": "div",
             "children": [
               {
@@ -2004,39 +1971,6 @@
         "tag": "td",
         "children": [
           {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "BEST VALUE TOUR CO. LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
             "tag": "div",
             "children": [
               {
@@ -2522,73 +2456,7 @@
             "tag": "div",
             "children": [
               {
-                "text": "BRIJAG&#39;S LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
                 "text": "BRINKLEY DISCOUNT APARTMENTS LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "BUFFALO PROPERTY INVESTMENT LIMITED",
                 "tag": "span",
                 "class": "entityName"
               },
@@ -3492,39 +3360,6 @@
             "tag": "div",
             "children": [
               {
-                "text": "CHINAMED LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
                 "text": "CHOC MODE LIMITED",
                 "tag": "span",
                 "class": "entityName"
@@ -3863,39 +3698,6 @@
             "tag": "label"
           }
         ]
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "COOL LIFE NZ LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
       },
       {
         "tag": "td"
@@ -6049,39 +5851,6 @@
             "tag": "label"
           }
         ]
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "FOREST SAFETY MANAGEMENT LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
       },
       {
         "tag": "td"
@@ -8280,39 +8049,6 @@
             "tag": "label"
           }
         ]
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "J &amp; R FENCING LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
       },
       {
         "tag": "td"
@@ -11779,7 +11515,7 @@
                 "class": "link",
                 "children": [
                   {
-                    "text": "NATURAL ARMOR FOOD SAFETY COMPANY LIMITED",
+                    "text": "NATURALARMOR FOOD SAFETY COMPANY LIMITED",
                     "tag": "span",
                     "class": "entityName"
                   },
@@ -13513,134 +13249,6 @@
               },
               {
                 "text": "Promation International Nz Ltd, 292 Motutara Road, Rd 1, Muriwai, 0881, New Zealand",
-                "tag": "div"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "text": "Incorporation Date:",
-        "tag": "td",
-        "comment": "COMP-71",
-        "class": "incorporationDate ",
-        "children": [
-          {
-            "tag": "br"
-          },
-          {
-            "text": "25 Oct 2017",
-            "tag": "label"
-          }
-        ]
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "tag": "div",
-            "children": [
-              {
-                "tag": "a",
-                "href": "javascript:viewCompanyDetails(&#39;6519772&#39;);",
-                "class": "link",
-                "children": [
-                  {
-                    "text": "RELEASE WOF TEST 25102016 01 LIMITED",
-                    "tag": "span",
-                    "class": "entityName"
-                  },
-                  {
-                    "text": "(6519772) (NZBN: 9429046427946)  Registered",
-                    "tag": "span",
-                    "class": "entityInfo",
-                    "children": [
-                      {
-                        "text": "NZ Limited Company",
-                        "tag": "span",
-                        "class": "entityType"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "tag": "br"
-              },
-              {
-                "text": "Registrar Of Companies, 135 Albert Street, Auckland Central, Auckland, 1010, New Zealand",
-                "tag": "div"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "text": "Incorporation Date:",
-        "tag": "td",
-        "comment": "COMP-71",
-        "class": "incorporationDate ",
-        "children": [
-          {
-            "tag": "br"
-          },
-          {
-            "text": "25 Oct 2017",
-            "tag": "label"
-          }
-        ]
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "tag": "div",
-            "children": [
-              {
-                "tag": "a",
-                "href": "javascript:viewCompanyDetails(&#39;6519732&#39;);",
-                "class": "link",
-                "children": [
-                  {
-                    "text": "RELEASE WOF TEST 25102017 LIMITED",
-                    "tag": "span",
-                    "class": "entityName"
-                  },
-                  {
-                    "text": "(6519732) (NZBN: 9429046427939)  Registered",
-                    "tag": "span",
-                    "class": "entityInfo",
-                    "children": [
-                      {
-                        "text": "NZ Limited Company",
-                        "tag": "span",
-                        "class": "entityType"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "tag": "br"
-              },
-              {
-                "text": "Floor 24 Asb Tower, 135 Albert Street, Auckland Central, Auckland, 1010, New Zealand",
                 "tag": "div"
               }
             ]
@@ -16382,39 +15990,6 @@
         "tag": "td",
         "children": [
           {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "TE TIHIRAHI LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
             "tag": "div",
             "children": [
               {
@@ -16658,39 +16233,6 @@
             "tag": "label"
           }
         ]
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "THE DLC COLLECTIVE LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
       },
       {
         "tag": "td"
@@ -18270,72 +17812,6 @@
             "tag": "label"
           }
         ]
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "WEST BROOK ESTATE LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
-      },
-      {
-        "tag": "td"
-      }
-    ]
-  },
-  {
-    "tag": "tr",
-    "children": [
-      {
-        "tag": "td",
-        "children": [
-          {
-            "text": "-",
-            "tag": "div",
-            "children": [
-              {
-                "text": "WEST BROOK VINE &amp; WINE LIMITED",
-                "tag": "span",
-                "class": "entityName"
-              },
-              {
-                "text": "Approved Name Reservation",
-                "tag": "span",
-                "class": "entityInfo"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tag": "td",
-        "class": "incorporationDate "
       },
       {
         "tag": "td"

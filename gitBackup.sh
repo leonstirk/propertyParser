@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cleanup
+rm -f *~
 
 git add -A
 git commit -m "auto-commit"
