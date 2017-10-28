@@ -55,3 +55,7 @@ done
 cat tmp.json | sed 's/\x27/"/g' | jq '.' > companies/$DATE.json
 rm -f tmp.json
 rm -f tmp.dat
+
+
+# count total number ofobservations 
+# cat companies/25Oct2017.json | jq '. | length' | wc -l
