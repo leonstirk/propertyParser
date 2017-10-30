@@ -1,7 +1,7 @@
 var fs = require('fs');
 var page = require('webpage').create();
 
-var url = "https://www.nzx.com/markets/NZSX/securities/RYM"
+var url = "https://www.nzx.com/instruments/RYM"
 
 console.log(url)
 

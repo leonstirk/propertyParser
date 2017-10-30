@@ -1,78 +1,160 @@
 [
   {
-    "tag": "div",
-    "id": "snapshot",
-    "class": "dictionary-screen inset",
+    "tag": "section",
+    "class": "instrument-snapshot",
     "children": [
       {
         "tag": "div",
-        "id": "price-info",
+        "class": "row",
         "children": [
           {
-            "text": "RYM",
-            "tag": "span",
-            "class": "info-code"
-          },
-          {
-            "text": "$9.070",
-            "tag": "span",
-            "class": "value"
-          },
-          {
-            "text": "$0.010 / 0.11%",
-            "tag": "span",
-            "class": "info-movement positive-movement"
-          },
-          {
-            "title": "The 52 Week Change is calculated based on an issuer’s unadjusted share price over the period. Please be aware that from 1 April 2015 the calculation will be updated to reflect an issuer’s share price adjusted for corporate actions (for example, share splits). The updated 52 Week Change will be consistent with the &#39;Rolling Year&#39; data displayed on NZX’s Company Research Centre, which is adjusted for corporate actions.",
             "tag": "div",
+            "class": "small-12 medium-5 columns",
             "children": [
               {
-                "text": "52 Week Change:",
-                "tag": "span",
-                "class": "info-fiftytwowk-movement"
+                "text": "RYM",
+                "tag": "h2"
               },
               {
-                "text": "$0.754 / 9.052%",
+                "text": "$9.080",
+                "tag": "h1"
+              },
+              {
+                "text": "$0.020 / 0.22%",
                 "tag": "span",
-                "class": "positive-movement"
+                "class": "up",
+                "children": [
+                  {
+                    "tag": "i",
+                    "class": "fa fa-caret-up"
+                  }
+                ]
+              },
+              {
+                "text": "52 Week Change:",
+                "tag": "small",
+                "children": [
+                  {
+                    "text": "$0.361 / 4.13%",
+                    "tag": "span",
+                    "class": "up",
+                    "children": [
+                      {
+                        "tag": "i",
+                        "class": "fa fa-caret-up"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "tag": "dl",
-        "children": [
-          {
-            "text": "Issued By",
-            "tag": "dt"
           },
           {
-            "tag": "dd",
+            "tag": "div",
+            "class": "small-12 medium-7 columns",
             "children": [
               {
-                "text": "Ryman Healthcare Limited",
-                "tag": "a",
-                "href": "/companies/RYM"
+                "tag": "table",
+                "class": "no-style",
+                "children": [
+                  {
+                    "tag": "tbody",
+                    "children": [
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td",
+                            "children": [
+                              {
+                                "text": "Instrument Name",
+                                "tag": "strong"
+                              }
+                            ]
+                          },
+                          {
+                            "text": "Ryman Healthcare Limited Ordinary Shares",
+                            "tag": "td"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr"
+                      },
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td",
+                            "children": [
+                              {
+                                "text": "Issued By",
+                                "tag": "strong"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "td",
+                            "children": [
+                              {
+                                "text": "Ryman Healthcare Limited",
+                                "tag": "a",
+                                "href": "/companies/RYM"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr"
+                      },
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td",
+                            "children": [
+                              {
+                                "text": "ISIN",
+                                "tag": "strong"
+                              }
+                            ]
+                          },
+                          {
+                            "text": "NZRYME0001S4",
+                            "tag": "td"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr"
+                      },
+                      {
+                        "tag": "tr",
+                        "children": [
+                          {
+                            "tag": "td",
+                            "children": [
+                              {
+                                "text": "Type",
+                                "tag": "strong"
+                              }
+                            ]
+                          },
+                          {
+                            "text": "Ordinary Shares",
+                            "tag": "td"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "tr"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
-          },
-          {
-            "text": "ISIN",
-            "tag": "dt"
-          },
-          {
-            "text": "NZRYME0001S4",
-            "tag": "dd"
-          },
-          {
-            "text": "Security Type",
-            "tag": "dt"
-          },
-          {
-            "text": "Ordinary Shares",
-            "tag": "dd"
           }
         ]
       }
@@ -80,97 +162,111 @@
   },
   {
     "tag": "div",
-    "id": "activity",
-    "class": "col span1of3",
+    "class": "panel callout instrument-info",
     "children": [
       {
-        "tag": "section",
-        "class": "mini-table-screen table-screen screen",
+        "text": "Activity",
+        "tag": "h4"
+      },
+      {
+        "tag": "table",
+        "class": "no-style",
         "children": [
           {
-            "tag": "header",
+            "tag": "tbody",
             "children": [
               {
-                "text": "Activity",
-                "tag": "h2"
-              }
-            ]
-          },
-          {
-            "tag": "table",
-            "children": [
-              {
-                "tag": "tbody",
+                "tag": "tr",
                 "children": [
                   {
-                    "tag": "tr",
+                    "tag": "td",
                     "children": [
                       {
-                        "text": "Trading Status",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "Trading",
-                        "tag": "td",
-                        "class": "numeric"
+                        "text": "Trading status",
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "Trading",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
                         "text": "Trades",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "23",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "41",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
                         "text": "Value",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "$370,339.60",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "$478,557.65",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
                         "text": "Volume",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "40,890",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "52,673",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
                         "text": "Capitalisation (000s)",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "$4,535,000",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
+                  },
+                  {
+                    "text": "$4,540,000",
+                    "tag": "td",
+                    "class": "text-right"
                   }
                 ]
               }
@@ -182,97 +278,111 @@
   },
   {
     "tag": "div",
-    "id": "performance",
-    "class": "col span1of3",
+    "class": "panel callout instrument-info",
     "children": [
       {
-        "tag": "section",
-        "class": "mini-table-screen table-screen screen",
+        "text": "Performance",
+        "tag": "h4"
+      },
+      {
+        "tag": "table",
+        "class": "no-style",
         "children": [
           {
-            "tag": "header",
+            "tag": "tbody",
             "children": [
               {
-                "text": "Performance",
-                "tag": "h2"
-              }
-            ]
-          },
-          {
-            "tag": "table",
-            "children": [
-              {
-                "tag": "tbody",
+                "tag": "tr",
                 "children": [
                   {
-                    "tag": "tr",
+                    "tag": "td",
                     "children": [
                       {
                         "text": "Open",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "$9.060",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "$9.060",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
                         "text": "High",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "$9.070",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "$9.090",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
                         "text": "Low",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "$9.050",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "$9.070",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
                         "text": "High Bid",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "$9.050",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "$9.080",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
                         "text": "Low Offer",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "$9.070",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
+                  },
+                  {
+                    "text": "$9.090",
+                    "tag": "td",
+                    "class": "text-right"
                   }
                 ]
               }
@@ -284,115 +394,111 @@
   },
   {
     "tag": "div",
-    "id": "fundamental",
-    "class": "col span1of3",
+    "class": "panel callout instrument-info",
     "children": [
       {
-        "tag": "section",
-        "class": "mini-table-screen table-screen screen",
+        "text": "Fundamental",
+        "tag": "h4"
+      },
+      {
+        "tag": "table",
+        "class": "no-style",
         "children": [
           {
-            "tag": "header",
+            "tag": "tbody",
             "children": [
               {
-                "text": "Fundamental",
-                "tag": "h2"
-              }
-            ]
-          },
-          {
-            "tag": "table",
-            "children": [
-              {
-                "tag": "tbody",
+                "tag": "tr",
                 "children": [
                   {
-                    "tag": "tr",
+                    "tag": "td",
                     "children": [
                       {
-                        "tag": "th",
-                        "children": [
-                          {
-                            "title": "Price/Earnings Ratio",
-                            "text": "P/E",
-                            "tag": "abbr"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "12.700",
-                        "tag": "td",
-                        "class": "numeric"
+                        "text": "P/E",
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "12.700",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
-                        "tag": "th",
-                        "children": [
-                          {
-                            "title": "Earnings Per Share",
-                            "text": "EPS",
-                            "tag": "abbr"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "$0.713",
-                        "tag": "td",
-                        "class": "numeric"
+                        "text": "EPS",
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "$0.713",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
-                        "tag": "th",
-                        "children": [
-                          {
-                            "title": "Net Tangible Assets Per Share",
-                            "text": "NTA",
-                            "tag": "abbr"
-                          }
-                        ]
-                      },
-                      {
-                        "text": "$3.288",
-                        "tag": "td",
-                        "class": "numeric"
+                        "text": "NTA",
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "$3.288",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
                         "text": "Gross Div Yield",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "1.965%",
-                        "tag": "td",
-                        "class": "numeric"
+                        "tag": "strong"
                       }
                     ]
                   },
                   {
-                    "tag": "tr",
+                    "text": "1.965%",
+                    "tag": "td",
+                    "class": "text-right"
+                  }
+                ]
+              },
+              {
+                "tag": "tr",
+                "children": [
+                  {
+                    "tag": "td",
                     "children": [
                       {
-                        "text": "Shares Issued",
-                        "tag": "th"
-                      },
-                      {
-                        "text": "500,000,000",
-                        "tag": "td",
-                        "class": "numeric"
+                        "text": "Securities Issued",
+                        "tag": "strong"
                       }
                     ]
+                  },
+                  {
+                    "text": "500,000,000",
+                    "tag": "td",
+                    "class": "text-right"
                   }
                 ]
               }

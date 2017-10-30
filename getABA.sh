@@ -4,7 +4,7 @@ DATE=`date --date='yesterday' +%d%b%Y`
 
 phantomjs --ssl-protocol=any getABA.js
 
-cat ABA.html | pup '#snapshot, #activity, #performance, #fundamental json{}' | jq '.' > ABA.json
+cat ABA.html | pup '.instrument-snapshot, .instrument-info json{}' | jq '.' > ABA.json
 
 JSON=$(cat ABA.json)
 
