@@ -52,10 +52,10 @@ while [ $i -lt $CLEN ]; do
     let i=$i+1
 done
 
-cat tmp.json | sed 's/\x27/"/g' | jq '.' > companies/$DATE.json
+cat tmp.json | sed 's/\x27/"/g' | jq '.' | sed 's/}/},/g' | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" > companies/$DATE.json
 rm -f tmp.json
 rm -f tmp.dat
 
 
 # count total number ofobservations 
-# cat companies/25Oct2017.json | jq '. | length' | wc -l
+# cat companies/25Oct2017.json | jq '. | length'
