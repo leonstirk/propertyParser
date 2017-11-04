@@ -1,10 +1,8 @@
 #!/bin/bash
 
-NAMEDATE=`date --date='yesterday' +%d%b%Y`
-INCORPDATE=`date --date='yesterday' '+%a %d %b %Y'`
-ACCESSDATE=`date +%s`
+DATE=`date --date='$1' +%d%b%Y`
 
-phantomjs --ssl-protocol=any companiesScrape.js
+phantomjs --ssl-protocol=any CR.js
 
 cat companies.html | pup '.dataList table tbody tr json{}' | jq '.' > companies.json
 
@@ -41,7 +39,6 @@ while [ $i -lt $CLEN ]; do
 		    J="$J 'registeredOffice': '$line',"
 		    ;;
 		4)
-		    J="$J 'accessTimestamp': '$ACCESSDATE', 'incorpDate': '$INCORPDATE',"
 		    ;;
 		5)
 		    J="$J 'incorporationDate': '$line' }"
@@ -55,7 +52,7 @@ while [ $i -lt $CLEN ]; do
     let i=$i+1
 done
 
-cat tmp.json | sed 's/\x27/"/g' | jq '.' | sed 's/}/},/g' | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" > companies/$NAMEDATE.json
+cat tmp.json | sed 's/\x27/"/g' | jq '.' | sed 's/}/},/g' | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" > companies/$DATE.json
 rm -f tmp.json
 rm -f tmp.dat
 

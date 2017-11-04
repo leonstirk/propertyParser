@@ -1,0 +1,379 @@
+[
+ {
+  "children": [
+   {
+    "class": "SCR011_04_003 ",
+    "for": "companyNumber",
+    "tag": "label",
+    "text": "Company number:"
+   }
+  ],
+  "class": "row",
+  "tag": "div",
+  "text": "6529532"
+ },
+ {
+  "children": [
+   {
+    "class": "SCR011_04_003 ",
+    "for": "nzbn",
+    "tag": "label",
+    "text": "NZBN:"
+   }
+  ],
+  "class": "row",
+  "tag": "div",
+  "text": "9429046438201"
+ },
+ {
+  "children": [
+   {
+    "class": "SCR011_04_002 ",
+    "for": "incorporationDate",
+    "tag": "label",
+    "text": "Incorporation Date:"
+   }
+  ],
+  "class": "row",
+  "tag": "div",
+  "text": "01 Nov 2017"
+ },
+ {
+  "children": [
+   {
+    "class": "SCR011_04_022 ",
+    "for": "companyStatus",
+    "tag": "label",
+    "text": "Company Status:"
+   }
+  ],
+  "class": "row",
+  "tag": "div",
+  "text": "Registered"
+ },
+ {
+  "children": [
+   {
+    "class": "SCR011_04_028 ",
+    "for": "entityType",
+    "tag": "label",
+    "text": "Entity type:"
+   }
+  ],
+  "class": "row",
+  "tag": "div",
+  "text": "NZ Limited Company"
+ },
+ {
+  "children": [
+   {
+    "class": "SCR011_04_029 ",
+    "for": "constitutionFiled",
+    "tag": "label",
+    "text": "Constitution filed:"
+   }
+  ],
+  "class": "row",
+  "tag": "div",
+  "text": "No"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "children": [
+       {
+        "children": [
+         {
+          "children": [
+           {
+            "class": "SCR011_04_30 ",
+            "for": "arFilingMonth",
+            "tag": "label",
+            "text": "AR filing month:"
+           }
+          ],
+          "tag": "td",
+          "text": "March"
+         },
+         {
+          "align": "right",
+          "tag": "td"
+         }
+        ],
+        "tag": "tr"
+       }
+      ],
+      "tag": "tbody"
+     }
+    ],
+    "class": "arFilingMonth",
+    "comment": "ENT-1965",
+    "tag": "table"
+   }
+  ],
+  "class": "row buttons",
+  "tag": "div"
+ },
+ {
+  "children": [
+   {
+    "id": "ultimateHoldingCompany",
+    "tag": "label",
+    "text": "Ultimate holding company"
+   },
+   {
+    "children": [
+     {
+      "children": [
+       {
+        "tag": "span",
+        "text": "Edit"
+       }
+      ],
+      "class": "button submit inactive",
+      "href": "javascript:",
+      "id": "uhcUpdate",
+      "onclick": "updateUltimateHoldingCompanyDetails(); return false;",
+      "style": "display: none; ",
+      "tag": "a"
+     }
+    ],
+    "class": "buttons panelControls maintainUhc",
+    "tag": "div"
+   }
+  ],
+  "class": "row",
+  "tag": "div",
+  "text": "No"
+ },
+ {
+  "children": [
+   {
+    "tag": "label"
+   },
+   {
+    "children": [
+     {
+      "tag": "strong",
+      "text": "Type of entity"
+     },
+     {
+      "tag": "br"
+     },
+     {
+      "tag": "span"
+     }
+    ],
+    "class": "uhcLine narrow",
+    "tag": "div"
+   }
+  ],
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "children": [
+   {
+    "tag": "label"
+   },
+   {
+    "children": [
+     {
+      "tag": "strong",
+      "text": "Registration number / ID"
+     },
+     {
+      "tag": "br"
+     },
+     {
+      "tag": "span",
+      "text": "[Not specified]"
+     }
+    ],
+    "class": "uhcLine narrow",
+    "tag": "div"
+   }
+  ],
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "children": [
+   {
+    "tag": "label"
+   },
+   {
+    "children": [
+     {
+      "tag": "strong",
+      "text": "Country of registration"
+     },
+     {
+      "tag": "br"
+     },
+     {
+      "tag": "span"
+     }
+    ],
+    "class": "uhcLine narrow",
+    "tag": "div"
+   }
+  ],
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "children": [
+   {
+    "tag": "label"
+   },
+   {
+    "children": [
+     {
+      "tag": "strong",
+      "text": "Registered office address"
+     },
+     {
+      "tag": "br"
+     },
+     {
+      "id": "regAddress",
+      "tag": "span"
+     }
+    ],
+    "class": "uhcLine narrow",
+    "tag": "div"
+   }
+  ],
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "href": "javascript:goTo(\u0026#39;/companies/app/ui/pages/companies/6529532/addresses\u0026#39;);",
+      "tag": "a",
+      "text": "Company addresses:"
+     }
+    ],
+    "tag": "label"
+   },
+   {
+    "children": [
+     {
+      "tag": "strong",
+      "text": "Registered Office"
+     },
+     {
+      "tag": "br"
+     }
+    ],
+    "class": "addressLine narrow",
+    "tag": "div",
+    "text": "4 Gradwell Place, Two Mile Bay, Taupo, 3330\n, New Zealand"
+   }
+  ],
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "children": [
+   {
+    "tag": "label"
+   },
+   {
+    "children": [
+     {
+      "tag": "strong",
+      "text": "Address for service"
+     },
+     {
+      "tag": "br"
+     }
+    ],
+    "class": "addressLine narrow",
+    "tag": "div",
+    "text": "4 Gradwell Place, Two Mile Bay, Taupo, 3330\n, New Zealand"
+   }
+  ],
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "children": [
+   {
+    "tag": "label"
+   },
+   {
+    "href": "javascript:goTo(\u0026#39;/companies/app/ui/pages/companies/6529532/addresses\u0026#39;);",
+    "tag": "a",
+    "text": "View all addresses"
+   }
+  ],
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "href": "javascript:goTo(\u0026#39;/companies/app/ui/pages/companies/6529532/directors\u0026#39;);",
+      "tag": "a",
+      "text": "Directors"
+     }
+    ],
+    "tag": "label"
+   }
+  ],
+  "class": "row",
+  "tag": "div",
+  "text": "Showing 1 of 1 directors"
+ },
+ {
+  "children": [
+   {
+    "tag": "label"
+   },
+   {
+    "children": [
+     {
+      "tag": "br"
+     }
+    ],
+    "class": "addressLine narrow",
+    "tag": "div",
+    "text": "Torben  LANDL 4 Gradwell Place, Two Mile Bay, Taupo, 3330\n, New Zealand"
+   }
+  ],
+  "class": "row",
+  "tag": "div"
+ },
+ {
+  "children": [
+   {
+    "tag": "label",
+    "text": "Company record link:"
+   },
+   {
+    "href": "http://app.companiesoffice.govt.nz/co/6529532",
+    "tag": "a",
+    "text": "http://app.companiesoffice.govt.nz/co/6529532"
+   }
+  ],
+  "class": "row",
+  "tag": "div"
+ }
+]

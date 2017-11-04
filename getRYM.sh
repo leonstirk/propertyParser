@@ -1,12 +1,12 @@
 #!/bin/bash
 
-DATE=`date`
+DATE=`date +%s`
 
-phantomjs --ssl-protocol=any getABA.js
+phantomjs --ssl-protocol=any getRYM.js
 
-cat ABA.html | pup '.instrument-snapshot, .instrument-info json{}' | jq '.' > ABA.json
+cat RYM.html | pup '.instrument-snapshot, .instrument-info json{}' | jq '.' > RYM.json
 
-JSON=$(cat ABA.json)
+JSON=$(cat RYM.json)
 
 C=$(echo $JSON | jq '[.[]]')
 CLEN=$(echo $C | jq '. | length')
@@ -185,21 +185,3 @@ done
 cat tmp.json | sed 's/\x27/"/g' | jq '.' >> RYM.dat
 rm -f tmp.json
 rm -f tmp.dat
-
-# if [ $L -gt 3 ]; then
-
-#             0)
-# 		J="{'companyName': '$line',"
-# 		;;
-#             1)
-# 		edit=$(echo $line | sed 's/(//g' | sed 's/)//g' | sed 's/NZBN: //g')
-# 		arr=($edit)
-# 		J="$J 'companyNumber': '${arr[0]}', 'NZBN': '${arr[1]}', 'companyStatus': '${arr[2]}',"
-# 		;;
-#             2)
-# 		J="$J 'entityType': '$line',"
-# 		;;
-#             3)
-# 		J="$J 'registeredOffice': '$line',"
-# 		;;
-# 	esac

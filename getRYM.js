@@ -10,7 +10,7 @@ page.open(url, function(status) {
         console.log('Unable to access network');
     } else {
         try {
-            fs.write("./ABA.html", page.content, 'w');
+            fs.write("./RYM.html", page.content, 'w');
         } catch(e) {
             console.log(e);
         }
