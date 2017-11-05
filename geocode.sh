@@ -22,4 +22,4 @@ while read i; do
 
     printf "\r${b[1]} : $PC%%"
 
-done < ./xan
+done < ./xao
