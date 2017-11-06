@@ -11,7 +11,7 @@ if(month < 10) {
     month = month.toString()
 }
 
-var daye = (date.getDate()-1).toString();
+var daye = (date.getDate()).toString();
 
 if(daye < 10) {
   daye = "".concat("0",daye.toString())

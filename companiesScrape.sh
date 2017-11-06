@@ -1,7 +1,6 @@
 #!/bin/bash
 
-NAMEDATE=`date --date='yesterday' +%d%b%Y`
-INCORPDATE=`date --date='yesterday' '+%a %d %b %Y'`
+NAMEDATE=`date +%d%b%Y`
 ACCESSDATE=`date +%s`
 
 phantomjs --ssl-protocol=any companiesScrape.js
@@ -41,7 +40,7 @@ while [ $i -lt $CLEN ]; do
 		    J="$J 'registeredOffice': '$line',"
 		    ;;
 		4)
-		    J="$J 'accessTimestamp': '$ACCESSDATE', 'incorpDate': '$INCORPDATE',"
+		    J="$J 'accessTimestamp': '$ACCESSDATE',"
 		    ;;
 		5)
 		    J="$J 'incorporationDate': '$line' }"
@@ -56,10 +55,12 @@ while [ $i -lt $CLEN ]; do
 done
 
 cat tmp.json | sed 's/\x27/"/g' | jq '.' | sed 's/}/},/g' | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" > companies/$NAMEDATE.json
+
 rm -f tmp.json
 rm -f tmp.dat
 
 rm -f companies.html
 rm -f companies.json
+
 # count total number ofobservations 
 # cat companies/25Oct2017.json | jq '. | length'

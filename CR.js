@@ -1,9 +1,16 @@
+var system = require('system');
+var args = system.args;
+
 var fs = require('fs');
 var page = require('webpage').create();
 
-var date = new Date();
+console.log(args[1])
+
+var date = new Date(args[1]);
 var year = date.getFullYear().toString();
 var month = date.getMonth()+1
+
+console.log(date)
 
 if(month < 10) {
     month = "".concat("0",month.toString())
@@ -11,13 +18,15 @@ if(month < 10) {
     month = month.toString()
 }
 
-var daye = (date.getDate()-1).toString();
+var daye = (date.getDate()).toString();
 
 if(daye < 10) {
   daye = "".concat("0",daye.toString())
 } else {
   daye = daye.toString()
 }
+
+end = "".concat(daye,"%2F",month,"%2F",year);
 
 console.log(end)
 console.log(typeof end)

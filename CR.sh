@@ -1,8 +1,9 @@
 #!/bin/bash
 
-DATE=`date --date='$1' +%d%b%Y`
+NAMEDATE=$(date --date="$1" +%d%b%Y)
+ACCESSDATE=$(date +%s)
 
-phantomjs --ssl-protocol=any CR.js
+phantomjs --ssl-protocol=any CR.js "$1"
 
 cat companies.html | pup '.dataList table tbody tr json{}' | jq '.' > companies.json
 
@@ -38,7 +39,8 @@ while [ $i -lt $CLEN ]; do
 		3)
 		    J="$J 'registeredOffice': '$line',"
 		    ;;
-		4)
+                4)
+                    J="$J 'accessTimestamp': '$ACCESSDATE',"
 		    ;;
 		5)
 		    J="$J 'incorporationDate': '$line' }"
@@ -52,11 +54,13 @@ while [ $i -lt $CLEN ]; do
     let i=$i+1
 done
 
-cat tmp.json | sed 's/\x27/"/g' | jq '.' | sed 's/}/},/g' | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" > companies/$DATE.json
+cat tmp.json | sed 's/\x27/"/g' | jq '.' | sed 's/}/},/g' | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" > companies/$NAMEDATE.json
+
 rm -f tmp.json
 rm -f tmp.dat
 
 rm -f companies.html
 rm -f companies.json
-# count total number ofobservations 
+
+# count total number ofobservations
 # cat companies/25Oct2017.json | jq '. | length'
