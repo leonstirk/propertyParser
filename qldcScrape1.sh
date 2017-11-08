@@ -13,47 +13,79 @@ while [  $A -lt 28087 ]; do
 
     W=$(cat page.html)
 
-
-
     # Check the arrays are of the same length
 
-    A=$(echo $W | pup '.pageComponentHeading json{}' | jq 'map(select(.)) | length')
-    B=$(echo $W | pup 'table tbody json{}' | jq 'map(select(.)) | length')
+    HLEN=$(echo $W | pup '.pageComponentHeading json{}' | jq 'map(select(.)) | length')
+    BLEN=$(echo $W | pup 'table tbody json{}' | jq 'map(select(.)) | length')
 
-    if [ $A -eq $B ]; then
+    if [ $HLEN -eq $BLEN ]; then
 
         H=$(echo $W | pup '.pageComponentHeading json{}' | jq '.')
-        P=$(echo $W | pup 'table tbody json{}' | jq '.')
+        B=$(echo $W | pup 'table tbody json{}' | jq '.')
 
         # i loops through each table section
         TABLES=()
 
         i=0
-        while [ $i -lt $A ]; do
+        while [ $i -lt $HLEN ]; do
 
             # create array of table headers
             TH=$(echo $H | jq '.['$i'].text')
             THS=("${THS[@]}" "$TH")
 
-            T=$(echo $P | jq '[.['$i']]')
-
-
+            T=$(echo $B | jq '[.['$i']]')
+	    HCOL=$(echo $B | jq '.['$i'].children[0].children[0].class')
+	    HROW=$(echo $B | jq '.['$i'].children[0].class')
+	    HROWLEN=$(echo $B | jq '[.['$i'].children[0].children[]] | length')
 
 	    # Decide if table has header cols or a header row
 
-	    if header columns
-		# "Table.ColHeader":"Value"
+	    if [ $HCOL == '"headerColumn"' ]; then
+		something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ //g' | sed 's/://g')
+		arr=($something)
+		echo ${arr[@]}
+		j=0
+		THING="{"
+		while [ $j -lt ${#arr[@]} ]; do
+		    if [ $(($j % 2)) -eq 0 ]; then
+			J=${arr[$j]}
+			THING=$THING$J": "
+		    fi
+		    if [ $(($j % 2)) -eq 1 ]; then
+			K=${arr[$j]}
+			THING=$THING$K","
+		    fi
+		    let j=$j+1
+		done
+		THING=$THING"}"
+		echo $THING
 	    fi
 
-	    if header row
-		if number of columns == 2
-		    # "Table.RowHeader":"Value"
-		fi
+	    # if [ $HROW == '"headerRow"' ]; then
 
-		if number of columns == 4
-		    # "Table.RowHeader.Description":"Value"
-		fi
-	    fi
+	    # 	if [ $HROWLEN == 2 ]; then
+	    # 	    # "Table.RowHeader":"Value"
+	    # 	    echo $T | jq '.[].children[].children[].text'
+	    # 	fi
+
+	    # 	if [ $HROWLEN == 5 ]; then
+	    # 	    # "Table.RowHeader.Description":"Value"
+	    # 	    echo $T | jq '.[].children[].children[].text'
+	    # 	fi
+
+	    # fi
+
 
 	    # Array of keys
 	    # Array of values
+
+	    let i=$i+1
+	done
+    fi
+
+    let A=$A+1
+
+    echo ${THS[@]}
+    echo $B | jq '[.[3].children[0].children[]] | length'
+
+done
