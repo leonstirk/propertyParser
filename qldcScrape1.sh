@@ -1,17 +1,19 @@
 #!/bin/bash
 
-A=28086
+rm -f qldcScrape.json
 
-while [  $A -lt 28087 ]; do
+A=0
+# A=6817
+while [  $A -lt 65000 ]; do
     ID=$( printf '%05d' $A )
 
     echo $ID;
 
-    # W=$(curl -s https://services.qldc.govt.nz/eProperty/P1/eRates/RatingInformation.aspx?r=QLDC.WEB.GUEST&f=%24P1.ERA.RATDETAL.VIW&PropertyNo=$ID | pup | sed -n '/class="pageComponentHeading">Property Details/,/ctl00_Content_ctrlMap_hidWmsBoundaries/p')
-
+    W=$(curl -s "https://services.qldc.govt.nz/eProperty/P1/eRates/RatingInformation.aspx?r=QLDC.WEB.GUEST&f=%24P1.ERA.RATDETAL.VIW&PropertyNo="$ID | pup 'div.cssContentWorkspace' )
+    
     # curl -s "https://services.qldc.govt.nz/eProperty/P1/eRates/RatingInformation.aspx?r=QLDC.WEB.GUEST&f=%24P1.ERA.RATDETAL.VIW&PropertyNo="$ID | pup 'div.cssContentWorkspace' > page.html
 
-    W=$(cat page.html)
+    # W=$(cat page.html)
 
     # Check the arrays are of the same length
 
@@ -20,7 +22,8 @@ while [  $A -lt 28087 ]; do
 
     if [ $HLEN -eq $BLEN ]; then
 
-        H=$(echo $W | pup '.pageComponentHeading json{}' | jq '.')
+	DOCUMENT='{ "PropertyNumber": "'$ID'",'
+
         B=$(echo $W | pup 'table tbody json{}' | jq '.')
 
         # i loops through each table section
@@ -28,10 +31,6 @@ while [  $A -lt 28087 ]; do
 
         i=0
         while [ $i -lt $HLEN ]; do
-
-            # create array of table headers
-            TH=$(echo $H | jq '.['$i'].text')
-            THS=("${THS[@]}" "$TH")
 
             T=$(echo $B | jq '[.['$i']]')
 	    HCOL=$(echo $B | jq '.['$i'].children[0].children[0].class')
@@ -41,51 +40,132 @@ while [  $A -lt 28087 ]; do
 	    # Decide if table has header cols or a header row
 
 	    if [ $HCOL == '"headerColumn"' ]; then
-		something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ //g' | sed 's/://g')
-		arr=($something)
-		echo ${arr[@]}
-		j=0
-		THING="{"
-		while [ $j -lt ${#arr[@]} ]; do
-		    if [ $(($j % 2)) -eq 0 ]; then
-			J=${arr[$j]}
-			THING=$THING$J": "
-		    fi
-		    if [ $(($j % 2)) -eq 1 ]; then
-			K=${arr[$j]}
-			THING=$THING$K","
-		    fi
-		    let j=$j+1
-		done
-		THING=$THING"}"
-		echo $THING
+	    	something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
+	    	arr=($something)
+	    	j=0
+	    	THING=""
+	    	while [ $j -lt ${#arr[@]} ]; do
+	    	    if [ $(($j % 2)) -eq 0 ]; then
+	    		J=${arr[$j]}
+	    		THING=$THING$J": "
+	    	    fi
+	    	    if [ $(($j % 2)) -eq 1 ]; then
+	    		K=${arr[$j]}
+	    		THING=$THING$K
+			if [ $j -lt $((${#arr[@]}-1)) ]; then
+			    THING=$THING','
+			fi
+	    	    fi
+	    	    let j=$j+1
+	    	done
+
+		DOCUMENT=$DOCUMENT$THING
 	    fi
 
-	    # if [ $HROW == '"headerRow"' ]; then
+	    if [ $HROW == '"headerRow"' ]; then
 
-	    # 	if [ $HROWLEN == 2 ]; then
-	    # 	    # "Table.RowHeader":"Value"
-	    # 	    echo $T | jq '.[].children[].children[].text'
-	    # 	fi
+	    	if [ $HROWLEN == 2 ]; then
 
-	    # 	if [ $HROWLEN == 5 ]; then
-	    # 	    # "Table.RowHeader.Description":"Value"
-	    # 	    echo $T | jq '.[].children[].children[].text'
-	    # 	fi
+		    if [ $i == 1 ]; then
+			LEN=$(echo $T | jq '[.[].children[].children[]] | length')
+	    		something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
+	    		arr=($something)
+			THING='"Owners": ['
+			j=2
+			while [ $j -lt $LEN ]; do
 
-	    # fi
+			    if [ $(($j % 2)) -eq 0 ]; then
+				THING=$THING'{"Owner'$(($j/2))'": '${arr[$j]}','
+			    fi
+			    if [ $(($j % 2)) -eq 1 ]; then
+			        THING=$THING'"PostalAddress'$(($j/2))'": '${arr[$j]}'}'
+				if [ $j -lt $(($LEN-2)) ]; then
+				    THING=$THING','
+				fi
+			    fi
 
+			    let j=$j+1
+			done
+			THING=$THING']'
 
-	    # Array of keys
-	    # Array of values
+			DOCUMENT=$DOCUMENT','$THING
+		    fi
+
+		    if [ $i -gt 1 ]; then
+			LEN=$(echo $T | jq '[.[].children[].children[]] | length')
+	    		something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g' | sed 's/*//g')
+	    		arr=($something)
+			THING=''
+			j=2
+
+	    		while [ $j -lt $LEN ]; do
+	    		    if [ $(($j % 2)) -eq 0 ]; then
+	    			J=${arr[$j]}
+	    			THING=$THING$J": "
+	    		    fi
+	    		    if [ $(($j % 2)) -eq 1 ]; then
+	    			K=${arr[$j]}
+	    			THING=$THING$K
+				if [ $j -lt $(($LEN-1)) ]; then
+				    THING=$THING','
+				fi
+	    		    fi
+	    		    let j=$j+1
+	    		done
+
+			DOCUMENT=$DOCUMENT','$THING
+		    fi
+
+	    	fi
+
+	    	if [ $HROWLEN == 5 ]; then
+		    LEN=$(echo $T | jq '[.[].children[].children[]] | length')
+	    	    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
+	    	    arr=($something)
+		    THING='"Rates": ['
+		    j=5
+		    while [ $j -lt $((${#arr[@]}-3)) ]; do
+			k=$(($j % 5))
+
+			case $k in
+			    0)
+				THING=$THING'{"Reference": '${arr[$j]}','
+				;;
+			    1)
+				THING=$THING'"Description": '${arr[$j]}','
+				;;
+			    2)
+				THING=$THING'"Factor": '${arr[$j]}','
+				;;
+			    3)
+				THING=$THING'"Rate": '${arr[$j]}','
+				;;
+			    4)
+				THING=$THING'"Amount": '${arr[$j]}'}'
+				if [ $j -lt $((${#arr[@]}-4)) ]; then 
+				    THING=$THING','
+				fi
+				;;  
+			esac
+
+			let j=$j+1
+		    done
+		    THING=$THING']'
+
+		    DOCUMENT=$DOCUMENT','$THING
+	    	fi
+
+	    fi
 
 	    let i=$i+1
 	done
+
+	DOCUMENT=$DOCUMENT'},'
+	echo $DOCUMENT >> qldcScrape.json
+
     fi
 
     let A=$A+1
-
-    echo ${THS[@]}
-    echo $B | jq '[.[3].children[0].children[]] | length'
-
 done
+
+cat qldcScrape.json | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" | jq '.' > qldcScrape1.json
