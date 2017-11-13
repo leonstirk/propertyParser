@@ -161,11 +161,11 @@ while [  $A -lt 65000 ]; do
 	done
 
 	DOCUMENT=$DOCUMENT'},'
-	echo $DOCUMENT >> qldcScrape.json
+	echo $DOCUMENT >> qldcScrape.dat
 
     fi
 
     let A=$A+1
 done
 
-cat qldcScrape.json | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" | jq '.' > qldcScrape1.json
+cat qldcScrape.dat | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" | jq '.' > qldcScrape.json
