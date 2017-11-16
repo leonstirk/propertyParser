@@ -16,17 +16,17 @@
                 "tag": "h2"
               },
               {
-                "text": "$9.240",
+                "text": "$9.230",
                 "tag": "h1"
               },
               {
-                "text": "$0.000 / 0.00%",
+                "text": "-$0.010 / -0.11%",
                 "tag": "span",
-                "class": "",
+                "class": "down",
                 "children": [
                   {
                     "tag": "i",
-                    "class": "fa"
+                    "class": "fa fa-caret-down"
                   }
                 ]
               },
@@ -35,7 +35,7 @@
                 "tag": "small",
                 "children": [
                   {
-                    "text": "$0.840 / 10.00%",
+                    "text": "$0.669 / 7.83%",
                     "tag": "span",
                     "class": "up",
                     "children": [
@@ -207,7 +207,7 @@
                     ]
                   },
                   {
-                    "text": "212",
+                    "text": "301",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -226,7 +226,7 @@
                     ]
                   },
                   {
-                    "text": "$3,842,351.25",
+                    "text": "$3,094,834.67",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -245,7 +245,7 @@
                     ]
                   },
                   {
-                    "text": "415,788",
+                    "text": "335,631",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -264,7 +264,7 @@
                     ]
                   },
                   {
-                    "text": "$4,620,000",
+                    "text": "$4,615,000",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -323,7 +323,7 @@
                     ]
                   },
                   {
-                    "text": "$9.250",
+                    "text": "$9.240",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -342,7 +342,7 @@
                     ]
                   },
                   {
-                    "text": "$9.200",
+                    "text": "$9.210",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -361,7 +361,7 @@
                     ]
                   },
                   {
-                    "text": "$10.100",
+                    "text": "$9.210",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -380,7 +380,7 @@
                     ]
                   },
                   {
-                    "text": "$8.750",
+                    "text": "$9.230",
                     "tag": "td",
                     "class": "text-right"
                   }
