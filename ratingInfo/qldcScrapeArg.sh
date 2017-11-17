@@ -2,9 +2,9 @@
 
 rm -f qldcScrape.json
 
-A=40
-# A=6817
-while [  $A -lt 41 ]; do
+A=$1
+
+while [  $A -lt $(($1+1)) ]; do
     ID=$( printf '%05d' $A )
 
     echo $ID;
@@ -68,7 +68,7 @@ while [  $A -lt 41 ]; do
 
 	    	if [ $HROWLEN == 2 ]; then
 
-		    if [ $B1 == $B2 ]; then
+		    if [ $B1 != $B2 ]; then
 
 			if [ $i -eq 1 ]; then
 			    LEN=$(echo $T | jq '[.[].children[].children[]] | length')
@@ -122,7 +122,9 @@ while [  $A -lt 41 ]; do
 
 		    fi
 
-		    if [ $B1 != $B2 ]; then
+		    if [ $B1 == $B2 ]; then
+			
+			echo 'ping'
 
 			if [ $i -eq 2 ]; then
 			    LEN=$(echo $T | jq '[.[].children[].children[]] | length')
@@ -228,4 +230,4 @@ while [  $A -lt 41 ]; do
     let A=$A+1
 done
 
-cat qldcScrape.dat | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" | sed 's/""/","/g' | jq '.' > qldcScrape.json
+# cat qldcScrape.dat | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" | sed 's/""/","/g' | jq '.' > qldcScrape.json
