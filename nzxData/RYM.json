@@ -16,17 +16,17 @@
                 "tag": "h2"
               },
               {
-                "text": "$9.180",
+                "text": "$9.210",
                 "tag": "h1"
               },
               {
-                "text": "-$0.070 / -0.76%",
+                "text": "$0.030 / 0.33%",
                 "tag": "span",
-                "class": "down",
+                "class": "up",
                 "children": [
                   {
                     "tag": "i",
-                    "class": "fa fa-caret-down"
+                    "class": "fa fa-caret-up"
                   }
                 ]
               },
@@ -35,7 +35,7 @@
                 "tag": "small",
                 "children": [
                   {
-                    "text": "$0.427 / 4.91%",
+                    "text": "$0.602 / 6.97%",
                     "tag": "span",
                     "class": "up",
                     "children": [
@@ -207,7 +207,7 @@
                     ]
                   },
                   {
-                    "text": "323",
+                    "text": "401",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -226,7 +226,7 @@
                     ]
                   },
                   {
-                    "text": "$6,965,806.79",
+                    "text": "$3,290,504.22",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -245,7 +245,7 @@
                     ]
                   },
                   {
-                    "text": "757,610",
+                    "text": "356,748",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -264,7 +264,7 @@
                     ]
                   },
                   {
-                    "text": "$4,590,000",
+                    "text": "$4,605,000",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -304,7 +304,7 @@
                     ]
                   },
                   {
-                    "text": "$9.250",
+                    "text": "$9.180",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -323,7 +323,7 @@
                     ]
                   },
                   {
-                    "text": "$9.250",
+                    "text": "$9.320",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -342,7 +342,7 @@
                     ]
                   },
                   {
-                    "text": "$9.150",
+                    "text": "$9.170",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -361,7 +361,7 @@
                     ]
                   },
                   {
-                    "text": "$9.160",
+                    "text": "$9.180",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -380,7 +380,7 @@
                     ]
                   },
                   {
-                    "text": "$9.180",
+                    "text": "$9.250",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -420,7 +420,7 @@
                     ]
                   },
                   {
-                    "text": "12.970",
+                    "text": "12.870",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -477,7 +477,7 @@
                     ]
                   },
                   {
-                    "text": "1.924%",
+                    "text": "1.939%",
                     "tag": "td",
                     "class": "text-right"
                   }
