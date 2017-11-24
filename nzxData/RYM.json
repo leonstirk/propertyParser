@@ -16,11 +16,11 @@
                 "tag": "h2"
               },
               {
-                "text": "$9.450",
+                "text": "$9.800",
                 "tag": "h1"
               },
               {
-                "text": "$0.240 / 2.61%",
+                "text": "$0.350 / 3.70%",
                 "tag": "span",
                 "class": "up",
                 "children": [
@@ -35,7 +35,7 @@
                 "tag": "small",
                 "children": [
                   {
-                    "text": "$0.780 / 8.77%",
+                    "text": "$1.027 / 11.28%",
                     "tag": "span",
                     "class": "up",
                     "children": [
@@ -207,7 +207,7 @@
                     ]
                   },
                   {
-                    "text": "393",
+                    "text": "363",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -226,7 +226,7 @@
                     ]
                   },
                   {
-                    "text": "$4,606,344.23",
+                    "text": "$3,453,599.81",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -245,7 +245,7 @@
                     ]
                   },
                   {
-                    "text": "487,671",
+                    "text": "356,118",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -264,7 +264,7 @@
                     ]
                   },
                   {
-                    "text": "$4,725,000",
+                    "text": "$4,900,000",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -304,7 +304,7 @@
                     ]
                   },
                   {
-                    "text": "$9.210",
+                    "text": "$9.450",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -323,7 +323,7 @@
                     ]
                   },
                   {
-                    "text": "$9.500",
+                    "text": "$9.800",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -342,7 +342,7 @@
                     ]
                   },
                   {
-                    "text": "$9.280",
+                    "text": "$9.460",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -361,7 +361,7 @@
                     ]
                   },
                   {
-                    "text": "$9.450",
+                    "text": "$10.280",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -380,7 +380,7 @@
                     ]
                   },
                   {
-                    "text": "$9.500",
+                    "text": "$8.860",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -420,7 +420,7 @@
                     ]
                   },
                   {
-                    "text": "12.910",
+                    "text": "12.690",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -439,7 +439,7 @@
                     ]
                   },
                   {
-                    "text": "$0.713",
+                    "text": "$0.745",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -458,7 +458,7 @@
                     ]
                   },
                   {
-                    "text": "$3.288",
+                    "text": "$3.584",
                     "tag": "td",
                     "class": "text-right"
                   }
@@ -477,7 +477,7 @@
                     ]
                   },
                   {
-                    "text": "1.933%",
+                    "text": "1.884%",
                     "tag": "td",
                     "class": "text-right"
                   }
