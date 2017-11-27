@@ -1,6 +1,6 @@
 #!/bin/bash
 
-touch dccGeoOut.csv
+touch dccPostalGeoOut.csv
 
 TOT=49565
 
@@ -16,10 +16,10 @@ while read i; do
     arr=$(echo $c | jq '.results[].address_components[].long_name')
     lat=$(echo $c | jq '.results[].geometry.location.lat')
     lng=$(echo $c | jq '.results[].geometry.location.lng')
-    echo $i, $formatted_address, $lat, $lng >> dccGeoOut.csv
+    echo $i, $formatted_address, $lat, $lng >> dccPostalGeoOut.csv
 
     PC=$(bc <<< 'scale=4; ('${b[0]}'/'$TOT')*100')
 
     printf "\r${b[1]} : $PC%%"
 
-done < ./xas
+done < ./xaa
