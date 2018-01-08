@@ -42,38 +42,38 @@ while [  $A -lt $(($1+1)) ]; do
 	    # Decide if table has header cols or a header row
 
 	    if [ $HCOL == '"headerColumn"' ]; then
-	    	something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
-	    	arr=($something)
-	    	j=0
-	    	THING=""
-	    	while [ $j -lt ${#arr[@]} ]; do
-	    	    if [ $(($j % 2)) -eq 0 ]; then
-	    		J=${arr[$j]}
-	    		THING=$THING$J": "
-	    	    fi
-	    	    if [ $(($j % 2)) -eq 1 ]; then
-	    		K=${arr[$j]}
-	    		THING=$THING$K
+		something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
+		arr=($something)
+		j=0
+		THING=""
+		while [ $j -lt ${#arr[@]} ]; do
+		    if [ $(($j % 2)) -eq 0 ]; then
+			J=${arr[$j]}
+			THING=$THING$J": "
+		    fi
+		    if [ $(($j % 2)) -eq 1 ]; then
+			K=${arr[$j]}
+			THING=$THING$K
 			if [ $j -lt $((${#arr[@]}-1)) ]; then
 			    THING=$THING','
 			fi
-	    	    fi
-	    	    let j=$j+1
-	    	done
+		    fi
+		    let j=$j+1
+		done
 
 		DOCUMENT=$DOCUMENT$THING
 	    fi
 
 	    if [ $HROW == '"headerRow"' ]; then
 
-	    	if [ $HROWLEN == 2 ]; then
+		if [ $HROWLEN == 2 ]; then
 
 		    if [ $B1 != $B2 ]; then
 
 			if [ $i -eq 1 ]; then
 			    LEN=$(echo $T | jq '[.[].children[].children[]] | length')
-	    		    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
-	    		    arr=($something)
+			    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
+			    arr=($something)
 			    THING='"Owners": ['
 			    j=2
 			    while [ $j -lt $LEN ]; do
@@ -82,7 +82,7 @@ while [  $A -lt $(($1+1)) ]; do
 				    THING=$THING'{"Owner'$(($j/2))'": '${arr[$j]}','
 				fi
 				if [ $(($j % 2)) -eq 1 ]; then
-			            THING=$THING'"PostalAddress'$(($j/2))'": '${arr[$j]}'}'
+				    THING=$THING'"PostalAddress'$(($j/2))'": '${arr[$j]}'}'
 				    if [ $j -lt $(($LEN-2)) ]; then
 					THING=$THING','
 				    fi
@@ -97,25 +97,25 @@ while [  $A -lt $(($1+1)) ]; do
 
 			if [ $i -gt 1 ]; then
 			    LEN=$(echo $T | jq '[.[].children[].children[]] | length')
-	    		    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g' | sed 's/*//g')
-	    		    arr=($something)
+			    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g' | sed 's/*//g')
+			    arr=($something)
 			    THING=''
 			    j=2
 
-	    		    while [ $j -lt $LEN ]; do
-	    			if [ $(($j % 2)) -eq 0 ]; then
-	    			    J=${arr[$j]}
-	    			    THING=$THING$J": "
-	    			fi
-	    			if [ $(($j % 2)) -eq 1 ]; then
-	    			    K=${arr[$j]}
-	    			    THING=$THING$K
+			    while [ $j -lt $LEN ]; do
+				if [ $(($j % 2)) -eq 0 ]; then
+				    J=${arr[$j]}
+				    THING=$THING$J": "
+				fi
+				if [ $(($j % 2)) -eq 1 ]; then
+				    K=${arr[$j]}
+				    THING=$THING$K
 				    if [ $j -lt $(($LEN-1)) ]; then
 					THING=$THING','
 				    fi
-	    			fi
-	    			let j=$j+1
-	    		    done
+				fi
+				let j=$j+1
+			    done
 
 			    DOCUMENT=$DOCUMENT','$THING
 			fi
@@ -128,8 +128,8 @@ while [  $A -lt $(($1+1)) ]; do
 
 			if [ $i -eq 2 ]; then
 			    LEN=$(echo $T | jq '[.[].children[].children[]] | length')
-	    		    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
-	    		    arr=($something)
+			    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
+			    arr=($something)
 			    THING='"Owners": ['
 			    j=2
 			    while [ $j -lt $LEN ]; do
@@ -138,7 +138,7 @@ while [  $A -lt $(($1+1)) ]; do
 				    THING=$THING'{"Owner'$(($j/2))'": '${arr[$j]}','
 				fi
 				if [ $(($j % 2)) -eq 1 ]; then
-			            THING=$THING'"PostalAddress'$(($j/2))'": '${arr[$j]}'}'
+				    THING=$THING'"PostalAddress'$(($j/2))'": '${arr[$j]}'}'
 				    if [ $j -lt $(($LEN-2)) ]; then
 					THING=$THING','
 				    fi
@@ -153,37 +153,37 @@ while [  $A -lt $(($1+1)) ]; do
 
 			if [ $i -gt 2 ]; then
 			    LEN=$(echo $T | jq '[.[].children[].children[]] | length')
-	    		    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g' | sed 's/*//g')
-	    		    arr=($something)
+			    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g' | sed 's/*//g')
+			    arr=($something)
 			    THING=''
 			    j=2
 
-	    		    while [ $j -lt $LEN ]; do
-	    			if [ $(($j % 2)) -eq 0 ]; then
-	    			    J=${arr[$j]}
-	    			    THING=$THING$J": "
-	    			fi
-	    			if [ $(($j % 2)) -eq 1 ]; then
-	    			    K=${arr[$j]}
-	    			    THING=$THING$K
+			    while [ $j -lt $LEN ]; do
+				if [ $(($j % 2)) -eq 0 ]; then
+				    J=${arr[$j]}
+				    THING=$THING$J": "
+				fi
+				if [ $(($j % 2)) -eq 1 ]; then
+				    K=${arr[$j]}
+				    THING=$THING$K
 				    if [ $j -lt $(($LEN-1)) ]; then
 					THING=$THING','
 				    fi
-	    			fi
-	    			let j=$j+1
-	    		    done
+				fi
+				let j=$j+1
+			    done
 
 			    DOCUMENT=$DOCUMENT','$THING
 			fi
 
 		    fi
 
-	    	fi
+		fi
 
-	    	if [ $HROWLEN == 5 ]; then
+		if [ $HROWLEN == 5 ]; then
 		    LEN=$(echo $T | jq '[.[].children[].children[]] | length')
-	    	    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
-	    	    arr=($something)
+		    something=$(echo $T | jq '.[].children[].children[].text' | sed 's/ /_/g' | sed 's/://g')
+		    arr=($something)
 		    THING='"Rates": ['
 		    j=5
 		    while [ $j -lt $((${#arr[@]}-3)) ]; do
@@ -215,7 +215,7 @@ while [  $A -lt $(($1+1)) ]; do
 		    THING=$THING']'
 
 		    DOCUMENT=$DOCUMENT','$THING
-	    	fi
+		fi
 
 	    fi
 

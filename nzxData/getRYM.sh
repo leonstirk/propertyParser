@@ -185,3 +185,5 @@ done
 cat tmp.json | sed 's/\x27/"/g' | jq '.' >> RYM.dat
 rm -f tmp.json
 rm -f tmp.dat
+rm -f RYM.html
+rm -f RYM.json
