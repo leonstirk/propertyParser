@@ -54,13 +54,30 @@ while [ $i -lt $CLEN ]; do
     let i=$i+1
 done
 
-cat tmp.json | sed 's/\x27/"/g' | jq '.' | sed 's/}/},/g' | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" > companies/$NAMEDATE.json
+cat tmp.json | sed 's/\x27/"/g' | jq '.' | sed 's/}/},/g' | sed '$ s/.$//' | sed '1s/^/[/' | sed -e "\$a]" > $NAMEDATE.json
+
+# insert into mongodb atlas
+
+MONGOPASS="i08wh37Y"
+
+atlasimport() {
+
+db=$1
+coll=$2
+file_name=$3
+
+mongoimport --host Cluster0-shard-0/cluster0-shard-00-00-gyynp.mongodb.net:27017,cluster0-shard-00-01-gyynp.mongodb.net:27017,cluster0-shard-00-02-gyynp.mongodb.net:27017 --ssl --username leonstirk --password $MONGOPASS --authenticationDatabase admin --db $db --collection $coll --type json --file $file_name --jsonArray
+}
+
+atlasimport test test $NAMEDATE.json
 
 rm -f tmp.json
 rm -f tmp.dat
 
 rm -f companies.html
 rm -f companies.json
+
+rm -f $NAMEDATE.json
 
 # count total number ofobservations 
 # cat companies/25Oct2017.json | jq '. | length'

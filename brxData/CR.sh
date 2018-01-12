@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ./CR.sh 11Jan2018
+
 NAMEDATE=$(date --date="$1" +%d%b%Y)
 ACCESSDATE=$(date +%s)
 
